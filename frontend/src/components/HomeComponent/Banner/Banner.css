@@ -1,0 +1,122 @@
+.banner{
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: relative;
+}
+.banner_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.banner_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.banner_content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.banner_content h1{
+    color: var(--white);
+    font-size: 40px;
+
+}
+
+
+.banner_content .gradient_text{
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 800;
+    background: linear-gradient(45deg, #5BCEFA, #FF9B56, #D62E3F, #A30262, #0038A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the background visible */
+    background-clip: text;
+}
+.filled-button {    
+    background: linear-gradient(45deg, var(--blue), var(--orange), var(--deep_pink), var(--purple), var(--blue_purple));
+    border: 2px solid var(--white);
+    padding: 15px 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+    font-size: 20px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+  }
+  
+  .filled-button:hover {
+    opacity: 0.9; 
+  }
+  .outlined-button { 
+    background: transparent;
+    border: none; 
+    padding: 15px 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+    font-size: 20px;
+    color: var(--white);
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+  }
+
+  .outlined-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    background: linear-gradient(45deg, var(--blue), var(--orange), var(--deep_pink), var(--purple), var(--blue_purple));
+    z-index: -1; 
+    padding: 2px; 
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    transition: 0.5s ease;
+  }
+
+  .outlined-button:hover {
+    background: linear-gradient(45deg, var(--blue), var(--orange), var(--deep_pink), var(--purple), var(--blue_purple));
+    color: white;
+  }
+
+  .outlined-button:hover::before {
+    background: transparent;
+  }
+
+ 
+ 
+.mobile_image{
+    display: none;
+}
+
+@media (max-width:700px){
+    .desktop_iamge{
+        display: none;
+    }
+    .mobile_image{
+        display: block;
+    }
+}

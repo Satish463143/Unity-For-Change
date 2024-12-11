@@ -1,0 +1,17 @@
+.topnav{
+    width: 100%;
+    text-align: end;
+}
+.topnav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+.topnav ul li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+

@@ -1,0 +1,24 @@
+:root {
+    --blue: #5BCEFA;
+    --orange: #FF9B56;
+    --deep-pink: #D62E3F;
+    --purple: #A30262;
+    --blue-purple: #0038A8;
+}
+.gradient-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    background: transparent;
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, var(--blue), var(--orange), var(--deep-pink), var(--purple), var(--blue-purple));
+    border-image-slice: 1;
+    cursor: pointer;
+}
+button {
+    border-radius: 10%;
+}
+

@@ -1,0 +1,33 @@
+.navbar {
+    padding: 10px;
+    background: var(--white);
+    transition: top 0.3s ease-in-out; 
+    width: 100%;
+    position: sticky;
+    top: 0; 
+    z-index: 1000; 
+  }
+
+.nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_menu .logo{
+    width: 110px;
+    height: auto;
+}
+.nav_menu .logo img{
+    width: 100%;
+    height: auto;
+}
+.nav_menu .menu ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_menu .menu ul li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+}
