@@ -1,0 +1,18 @@
+.banners{
+    background: linear-gradient(45deg, var(--purple), var(--blue), var(--orange), var(--deep_pink), var(--blue_purple));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 50px;
+    margin-top: 50px;
+}
+.banners h1{
+    font-size: 50px;
+    text-align: center;
+}
+.banners p{
+    max-width: 800px;
+    padding-top: 20px;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+}

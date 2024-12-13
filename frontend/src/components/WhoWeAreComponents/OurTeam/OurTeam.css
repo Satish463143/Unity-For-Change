@@ -1,0 +1,33 @@
+.how_it_going_title p{
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-top: -40px;
+    font-size: 20px;
+}
+.our_team{
+    margin-top: 50px;
+    background: var(--orange);
+    padding: 1px 0 50px 0;
+}
+.team_slider{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.team_slider img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+
+}
+.team_slider h2{
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+.team_slider p{
+    font-size: 20px;
+    
+}

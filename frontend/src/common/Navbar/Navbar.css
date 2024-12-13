@@ -6,6 +6,9 @@
     top: 0; 
     z-index: 1000; 
   }
+  .liActive{
+    font-weight: 600 !important;
+  }
 
 .nav_menu{
     display: flex;

@@ -1,10 +1,25 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './Navbar.css'
 import logo from '../../assets/Images/logo.png'
-import {Link} from 'react-router-dom'
+import {Link,useLocation} from 'react-router-dom'
 import Button from '../Button/Button'
 
 const Navbar = () => {
+  const [menu, setMenu] = useState("Home");
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === "/") {
+      setMenu("Home");
+    } else if (path === "/who_we_are") {
+      setMenu("Who We Are");
+    }
+     else {
+      setMenu("");
+    }
+  }, [location]);
+
 
   return (
     <div className='navbar'>
@@ -18,8 +33,8 @@ const Navbar = () => {
           <div className="menu">
             <nav>
               <ul>
-                <li>
-                  <Link to=''>
+                <li onClick={()=> setMenu('Who We Are')} className={menu === "Who We Are" ? "liActive" : ""}>
+                  <Link to='who_we_are'>
                     Who We are
                   </Link>
                 </li>
