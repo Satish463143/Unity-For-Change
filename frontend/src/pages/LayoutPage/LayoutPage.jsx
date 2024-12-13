@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import Navbar from '../../common/Navbar/Navbar';
 import TopNav from '../../common/TopNav/TopNav';
 import { Outlet,useLocation } from 'react-router-dom';
+import Footer from '../../common/Footer/Footer';
 
 const LayoutPage = () => {
 
@@ -30,6 +31,7 @@ const LayoutPage = () => {
         <TopNav/>
         <Navbar/>
         <Outlet/>
+        <Footer/>
     </div>
   )
 }

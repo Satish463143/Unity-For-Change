@@ -1,5 +1,4 @@
 .navbar {
-    padding: 10px;
     background: var(--white);
     transition: top 0.3s ease-in-out; 
     width: 100%;

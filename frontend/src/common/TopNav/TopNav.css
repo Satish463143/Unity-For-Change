@@ -7,7 +7,7 @@
     justify-content: end;
     align-items: center;
     gap: 30px;
-    margin: 20px 0;
+    margin-top: 20px ;
 }
 .topnav ul li{
     list-style: none;

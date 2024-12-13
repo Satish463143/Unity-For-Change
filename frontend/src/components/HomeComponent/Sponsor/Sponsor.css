@@ -1,0 +1,21 @@
+.sponsors .title h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(45deg, #5BCEFA, #0038A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the background visible */
+    background-clip: text;
+    text-align: center;
+
+}
+.sponsors .title{
+    margin: 60px 0;
+}
+.sponsors hr{
+    border: 1px solid rgb(204, 201, 201);
+}
+
+.slick-prev:before, .slick-next:before {
+    color: var(--black); /* Set the arrow color */
+}

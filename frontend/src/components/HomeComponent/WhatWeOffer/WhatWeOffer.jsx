@@ -21,6 +21,25 @@ const WhatWeOffer = () => {
                     </div>
                     <div className="what_we_offer_box_content">
                         <h1>Heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at corporis eligendi fugiat ut tempore voluptatibus a quas, quis incidunt ipsa modi error nihil consectetur! Quod eos necessitatibus voluptas quibusdam!</p>
+                    </div>
+                </div>
+                <div className="what_we_offer_box" style={{borderColor:'var(--blue)'}}>
+                    <div className="what_we_offer_box_image">
+                        <img src={whatweoffer} alt="" />
+                    </div>
+                    <div className="what_we_offer_box_content">
+                        <h1 style={{color:'var(--blue) !important'}}>Heading</h1>
+                        <p style={{color:'var(--blue) !important'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at corporis eligendi fugiat ut tempore voluptatibus a quas, quis incidunt ipsa modi error nihil consectetur! Quod eos necessitatibus voluptas quibusdam!</p>
+                    </div>
+                </div>
+                <div className="what_we_offer_box" style={{borderColor:'var(--pruple)'}}>
+                    <div className="what_we_offer_box_image">
+                        <img src={whatweoffer} alt="" />
+                    </div>
+                    <div className="what_we_offer_box_content">
+                        <h1 style={{color:'var(--pruple) !important'}}>Heading</h1>
+                        <p style={{color:'var(--pruple) !important'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident at corporis eligendi fugiat ut tempore voluptatibus a quas, quis incidunt ipsa modi error nihil consectetur! Quod eos necessitatibus voluptas quibusdam!</p>
                     </div>
                 </div>
             </div>

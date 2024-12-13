@@ -1,10 +1,10 @@
 import React from 'react'
 import './Button.css'
 
-const Button = () => {
+const Button = ({content}) => {
   return (
     <div>
-      <button class="gradient-button">DONATE</button>
+      <button class="gradient-button">{content}</button>
     </div>
   )
 }

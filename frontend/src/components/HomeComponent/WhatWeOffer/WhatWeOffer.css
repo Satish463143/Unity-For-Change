@@ -1,5 +1,5 @@
 .what_we_offer{
-    background-color:#FFE8E8 ;
+    background:linear-gradient(to bottom, var(--white), #FFE8E8) ;
     width: 100%;
     height: auto;
 }
@@ -30,10 +30,32 @@
     margin-top: 30px;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 28% 28% 28%;
 }
 .what_we_offer_box{
     width: 100%;
     padding: 20px;
-
+    background: var(--white);
+    border: 2px solid var(--deep_pink);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 60px;
+}
+.what_we_offer_box_image{
+    width: 300px;
+    height: auto;
+}
+.what_we_offer_box_image img{
+    width: 100%;
+    height: auto;
+}
+.what_we_offer_box_content h1 {
+    text-align: center;
+}
+.what_we_offer_box_content h1, .what_we_offer_box_content p {
+    color: var(--deep_pink) !important;
+}
+.what_we_offer_box_content p{
+    text-align: justify;
+    margin-top: 20px;
 }

@@ -11,7 +11,9 @@ const Navbar = () => {
       <div className='container'>
         <div className="nav_menu">
           <div className="logo">
-            <img src={logo} alt="" />
+            <Link to='/'>
+              <img src={logo} alt="" />
+            </Link>
           </div>
           <div className="menu">
             <nav>
@@ -38,7 +40,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to=''>                   
-                      <Button/>
+                      <Button content="Donate Us"/>
                   </Link>
                 </li>
               </ul>

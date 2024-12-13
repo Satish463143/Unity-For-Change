@@ -1,0 +1,54 @@
+.downbanner{
+    background: linear-gradient(45deg, #5BCEFA, #FF9B56, #e33c4d, #A30262, #0038A8);
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 20px 0 50px 0;
+
+}
+.down_banner_bg{
+  background: rgba(233, 229, 203, 0.5);
+  padding: 50px 0;
+}
+.downbanner p{
+    margin: 20px 0;
+}
+.downbanner .gradient-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    background: var(--white);
+    clip-path: polygon(
+      0 0, 
+      calc(100% - 20px) 0, 
+      100% 50%, 
+      calc(100% - 20px) 100%, 
+      0 100%, 
+      20px 50%
+    );
+    border: 5px solid transparent;
+    background-clip: padding-box;
+  }
+.downbanner .gradient-button::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background: linear-gradient(45deg, var(--blue), var(--orange), var(--deep_pink), var(--purple), var(--blue_purple));
+    border-radius: 5px;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 20px) 0,
+      100% 50%,
+      calc(100% - 20px) 100%,
+      0 100%,
+      20px 50%
+    );
+    z-index: -1;
+  }
