@@ -15,6 +15,12 @@ const Navbar = () => {
     } else if (path === "/who_we_are") {
       setMenu("Who We Are");
     }
+    else if (path === "/what_we_do") {
+      setMenu("What We Do");
+    }
+    else if (path === "/activites") {
+      setMenu("Activites");
+    }
      else {
       setMenu("");
     }
@@ -38,13 +44,13 @@ const Navbar = () => {
                     Who We are
                   </Link>
                 </li>
-                <li>
-                  <Link to=''>
+                <li onClick={()=> setMenu('What We Do')} className={menu === "What We Do" ? "liActive" : ""}>
+                  <Link to='/what_we_do'>
                     What We Do
                   </Link>
                 </li>
-                <li>
-                  <Link to=''>
+                <li onClick={()=> setMenu('Activites')} className={menu === "Activites" ? "liActive" : ""}>
+                  <Link to='/activites'>
                     Activities
                   </Link>
                 </li>

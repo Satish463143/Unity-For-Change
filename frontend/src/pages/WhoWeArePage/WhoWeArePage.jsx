@@ -18,4 +18,5 @@ const WhoWeArePage = () => {
   )
 }
 
+
 export default WhoWeArePage

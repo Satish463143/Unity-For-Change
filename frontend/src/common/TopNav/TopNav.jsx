@@ -7,7 +7,7 @@ const TopNav = () => {
     <div className='container'>
       <div className="topnav">
         <ul>
-          <li><Link>Gallery</Link></li>
+          <li><Link to='/galery'>Gallery</Link></li>
           <li><Link>Contact Us</Link></li>
           <li>
             <a href="" target='_blank'>
