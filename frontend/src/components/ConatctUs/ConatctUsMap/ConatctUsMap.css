@@ -1,0 +1,32 @@
+.contact_map iframe{
+    border: 2px solid var(--blue);
+}
+.contact_map .number{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(45deg, var(--purple), var(--blue), var(--orange), var(--deep_pink), var(--blue_purple) );
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+    
+}
+.contact_map .number a{
+    color: var(--white);
+}
+.contact_link ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.contact_link ul li{
+    list-style: none;
+} 
+.contact_link h1{
+    color: var(--blue);
+    width: 90%;
+    text-align: center;
+    margin:20px 0 ;
+}

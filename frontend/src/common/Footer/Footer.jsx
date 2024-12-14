@@ -136,27 +136,27 @@ const Footer = () => {
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/'>What We Do</Link>
+                        <Link to='/what_we_do'>What We Do</Link>
                     </li>
                     <li>
-                        <Link to='/'>Who We Are</Link>
+                        <Link to='/who_we_are'>Who We Are</Link>
                     </li>
                     <li>
-                        <Link to='/'>Our Projects</Link>
+                        <Link to='/activites'>Our Projects</Link>
                     </li>
                 </div>
                 <div className="menu_link menu_link_2">
                     <li>
-                        <Link to='/'>Resouces</Link>
+                        <Link to='/resources'>Resouces</Link>
                     </li>
                     <li>
-                        <Link to='/'>Gallery</Link>
+                        <Link to='/galery'>Gallery</Link>
                     </li>
                     <li>
-                        <Link to='/'>Conatct Us</Link>
+                        <Link to='/contact_us'>Conatct Us</Link>
                     </li>
                     <li>
-                        <Link to='/'>Make a Donation</Link>
+                        <Link to='/donate'>Make a Donation</Link>
                     </li>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 const ActivitiesItem = ({id,image,date,location, title}) => {
   return (
     <div className='activities_box'>
-        <Link to=''>
+        <Link to={`/project_details/${id}`} >
             <img src={image} alt="" /> 
             <div className="activities_date">
                 <p style={{display:'flex', alignItems:'center', gap:'8px'}}>

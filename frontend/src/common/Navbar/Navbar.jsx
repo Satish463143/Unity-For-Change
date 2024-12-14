@@ -21,6 +21,12 @@ const Navbar = () => {
     else if (path === "/activites") {
       setMenu("Activites");
     }
+    else if (path === "/project_details/:id") {
+      setMenu("Activites");
+    }
+    else if (path === "/resources") {
+      setMenu("Resources");
+    }
      else {
       setMenu("");
     }
@@ -54,13 +60,13 @@ const Navbar = () => {
                     Activities
                   </Link>
                 </li>
-                <li>
-                  <Link to=''>
+                <li onClick={()=> setMenu('Resources')} className={menu === "Resources" ? "liActive" : ""}>
+                  <Link to='/resources'>
                     Resources
                   </Link>
                 </li>
                 <li>
-                  <Link to=''>                   
+                  <Link to='/donate'>                   
                       <Button content="Donate Us"/>
                   </Link>
                 </li>
