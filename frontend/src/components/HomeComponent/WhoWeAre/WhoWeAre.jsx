@@ -1,7 +1,7 @@
 import React from 'react'
 import './WhoWeAre.css'
 import whoweare from '../../../assets/Images/whoweare.png'
-import {Link} from 'react-router-dom'
+import {Link, Links} from 'react-router-dom'
 
 const WhoWeAre = () => {
   return (
@@ -22,9 +22,13 @@ const WhoWeAre = () => {
                     <p>
                         We are dedicated to creating a supportive, inclusive, and empowering environment for lesbian, bisexual, and transgender individuals. Our platform offers resources, advocacy, and a safe space to connect and thrive
                     </p>
-                    <div class="gradient-button">
-                        <span>Learn More</span>
-                    </div>
+                    <Link to='/who_we_are'>
+                        <div class="gradient-button">
+                            
+                                <span>Learn More</span>
+                            
+                        </div>
+                    </Link>
                 </div>
 
 

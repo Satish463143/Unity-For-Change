@@ -92,8 +92,8 @@ const NextArrow = (props) => {
             height:'50px',
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
-        
+            alignItems:'center',
+            zIndex:'99'        
         }}
         onClick={onClick}
       />
