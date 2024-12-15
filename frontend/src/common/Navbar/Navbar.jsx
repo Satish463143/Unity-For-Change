@@ -47,7 +47,7 @@ const Navbar = () => {
               <ul>
                 <li onClick={()=> setMenu('Who We Are')} className={menu === "Who We Are" ? "liActive" : ""}>
                   <Link to='who_we_are'>
-                    Who We are
+                    Who We Are
                   </Link>
                 </li>
                 <li onClick={()=> setMenu('What We Do')} className={menu === "What We Do" ? "liActive" : ""}>

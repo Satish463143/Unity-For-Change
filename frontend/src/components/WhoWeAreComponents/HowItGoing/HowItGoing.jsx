@@ -7,7 +7,7 @@ const HowItGoing = () => {
     <div className='container'>
         <div className="how_it_going">
             <div className="how_it_going_title">
-                <h1>how it going</h1>
+                <h1>how its going</h1>
             </div>
             <div className="how_it_going_grid">
                 <div className="how_it_going_content">

@@ -1,0 +1,77 @@
+home_banner: {
+    image,
+    title,
+    subtitle
+},
+//limit 3
+what_we_offer: {
+    heading,
+    description,
+    image
+},
+// only one
+get_involved: {
+    image,
+    title,
+    subtitle,
+    time,
+    date
+},
+// only one
+who_we_are:  {
+    image,
+    description,
+},
+// only one
+how_it_started: {
+    image,
+    description,
+},
+// only one
+how_its_going:{
+    image,
+    description
+},
+our_values: {
+    image,
+    heading,
+    description
+},
+our_team:{
+    image,
+    name,
+    designation,
+    description
+},
+what_we_do:{
+    image,
+    title,
+    description
+},
+activities: {
+    title,
+    subtitle,
+    mainImage,
+    description: richtext,
+    images,
+    date,
+    location
+},
+gallery: {
+    image
+},
+contactus: {
+    full_name,
+    email,
+    number,
+    message
+},
+resources: {
+    name,
+    description,
+    pdf
+},
+sponsores: {
+    name,
+    image
+}

@@ -200,15 +200,6 @@ JAZZMIN_SETTINGS = {
 
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
-
-        # "api.User": "fas fa-user",
-        # "api.Profile":"fas fa-address-card",
-        # "api.Post":"fas fa-th",
-        # "api.Category":"fas fa-tag",
-        # "api.Comment":"fas fa-envelope",
-        # "api.Notification":"fas fa-bell",
-        # "api.Bookmark":"fas fa-heart",
-
         
     },
     "default_icon_parents": "fas fa-chevron-circle-right",
@@ -231,30 +222,30 @@ JAZZMIN_UI_TWEAKS = {
     "footer_small_text": False,
     "body_small_text": False,
     "brand_small_text": False,
-    "brand_colour": False,
-    "accent": "accent-olive",
-    "navbar": "navbar-gray-dark navbar-dark",
-    "no_navbar_border": False,
+    "brand_colour": "navbar-info",
+    "accent": "accent-navy",
+    "navbar": "navbar-info navbar-dark",
+    "no_navbar_border": True,
     "navbar_fixed": False,
     "layout_boxed": False,
     "footer_fixed": False,
     "sidebar_fixed": True,
-    "sidebar": "sidebar-dark-teal",
-    "sidebar_nav_small_text": True,
+    "sidebar": "sidebar-light-maroon",
+    "sidebar_nav_small_text": False,
     "sidebar_disable_expand": False,
     "sidebar_nav_child_indent": True,
     "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_legacy_style": True,
     "sidebar_nav_flat_style": False,
-    "theme": "solar",
+    "theme": "cerulean",
     "dark_mode_theme": None,
     "button_classes": {
         "primary": "btn-outline-primary",
         "secondary": "btn-outline-secondary",
-        "info": "btn-info",
+        "info": "btn-outline-info",
         "warning": "btn-warning",
         "danger": "btn-danger",
-        "success": "btn-success"
+        "success": "btn-outline-success"
     },
     "actions_sticky_top": False
 }
