@@ -201,11 +201,26 @@ JAZZMIN_SETTINGS = {
     "icons": {
         "admin.LogEntry": "fas fa-file",
 
+        "api.HomeBanner": "fas fa-image",
+        "api.WhatWeOffer": "fas fa-gift",
+        "api.GetInvolved": "fas fa-handshake",
+        "api.WhoWeAre": "fas fa-users",
+        "api.HowItStarted": "fas fa-rocket",
+        "api.HowItsGoing": "fas fa-chart-line",
+        "api.OurValues": "fas fa-balance-scale",
+        "api.OurTeam": "fas fa-user-friends",
+        "api.WhatWeDo": "fas fa-tasks",
+        "api.Activity": "fas fa-calendar-alt",
+        "api.Gallery": "fas fa-images",
+        "api.ContactUs": "fas fa-envelope",
+        "api.Resource": "fas fa-book",
+        "api.Sponsor": "fas fa-dollar-sign",
+
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         
     },
-    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_parents": "fas fa-arrow-circle-right",
     "default_icon_children": "fas fa-arrow-circle-right",
     "related_modal_active": False,
     
