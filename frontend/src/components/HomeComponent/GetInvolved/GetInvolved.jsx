@@ -1,8 +1,10 @@
 import React from 'react'
 import './GetInvolved.css'
 import get_involved from '../../../assets/Images/get_involved.png'
+import { getGetInvolved } from '../../../api/api'
 
 const GetInvolved = () => {
+    const {data, error, loading} = getGetInvolved();
   return (
     <div className='container'>
         <div className="get_involved_title">
@@ -10,9 +12,9 @@ const GetInvolved = () => {
         </div>
         <div className="get_involved">
             <div className="get_involved_content">
-                <p>The celebration of love</p>
-                <h1>Unity <br /> for <br /> Change</h1>
-                <h3>Kathmandu <br /> 20th Octuber</h3>
+                <p>{data.subtitle}</p>
+                <h1>{data.title}</h1>
+                <h3>{data.date} <br /> {data.time}</h3>
             </div>
             <div className="get_involved_image">
                 <img src={get_involved} alt="" />

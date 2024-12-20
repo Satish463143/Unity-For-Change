@@ -15,7 +15,7 @@ export const getAllActivities = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -41,7 +41,7 @@ export const getGalleryImages = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -67,7 +67,7 @@ export const getGetInvolved = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result[0]);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -93,7 +93,7 @@ export const getHomeBanner = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result[0]);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -119,7 +119,7 @@ export const getHowItStarted = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -145,7 +145,7 @@ export const gethowItsGoing = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -171,7 +171,7 @@ export const getOurTeam = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -197,7 +197,7 @@ export const getOurValues = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -223,7 +223,7 @@ export const getResources = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -249,7 +249,7 @@ export const getSponsors = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -275,7 +275,7 @@ export const getWhatWeDo = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -301,7 +301,7 @@ export const getWhatWeOffer = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -327,7 +327,7 @@ export const getWhoWeAre = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result.data);
+                setData(result[0]);
             } catch (err) {
                 setError(err.message);
             } finally {

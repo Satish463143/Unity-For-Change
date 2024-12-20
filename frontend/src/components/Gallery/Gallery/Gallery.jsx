@@ -2,45 +2,15 @@ import React,{useState} from 'react'
 import './Gallery.css'
 import image1 from '../../../assets/Images/image-lgbtq-plus.jpg' 
 import Button from '../../../common/Button/Button'
+import { getGalleryImages } from '../../../api/api'
 
 const Gallery = () => {
-    const gallery = [
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-    ]
+    const {data: gallery} = getGalleryImages()
     const [visibleCount, setVisibleCount] = useState(8);
 
     // Sort projects by newest first
     const sortedProjects = gallery
-        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
 
     // Function to load more images
     const loadMore = () => {

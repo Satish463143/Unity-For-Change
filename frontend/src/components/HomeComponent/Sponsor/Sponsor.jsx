@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SponsorItem from '../../../common/SponsorItem/SponsorItem';
 import compnay from '../../../assets/Images/compnay.png'
+import { getSponsors } from '../../../api/api';
 
 const Sponsor = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -20,29 +21,7 @@ const Sponsor = () => {
         afterChange: (current) => setActiveIndex(current), // Track the active element
     };
 
-    const items = [
-        {
-            image: '../../../../assets/Images/whatweoffer.png',
-            name: "Sponsor's Name 1",
-        },
-        {
-            image: '../../../assets/Images/whatweoffer.png',
-            name: "Sponsor's Name 2",
-        },
-        {
-            image: '../../../assets/Images/whatweoffer.png',
-            name: "Sponsor's Name 3",
-        },
-        {
-            image: '../../../assets/Images/whatweoffer.png',
-            name: "Sponsor's Name 4",
-        },
-        {
-            image: '../../../assets/Images/whatweoffer.png',
-            name: "Sponsor's Name 5",
-        },
-    ];
-
+    const {data: items} = getSponsors();
 
     return (
         <div className="sponsors">
