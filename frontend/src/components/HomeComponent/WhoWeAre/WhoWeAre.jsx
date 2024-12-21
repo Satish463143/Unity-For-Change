@@ -2,8 +2,10 @@ import React from 'react'
 import './WhoWeAre.css'
 import whoweare from '../../../assets/Images/whoweare.png'
 import {Link, Links} from 'react-router-dom'
+import { getWhoWeAre } from '../../../api/api'
 
 const WhoWeAre = () => {
+    const {data, error, loading} = getWhoWeAre();
   return (
     <div className='who_we_are'>
         <div className="container">
@@ -14,16 +16,16 @@ const WhoWeAre = () => {
                 <div className="wo_we_are_grid_box">
                     <div className="wo_we_are_grid_background">
                         <div className="wo_we_are_grid_image">
-                            <img src={whoweare} alt="" />
+                            <img src={data.image} alt="" />
                         </div>
                     </div>
                 </div>
                 <div className="who_we_are_content">
                     <p>
-                        We are dedicated to creating a supportive, inclusive, and empowering environment for lesbian, bisexual, and transgender individuals. Our platform offers resources, advocacy, and a safe space to connect and thrive
+                       {data.description}
                     </p>
                     <Link to='/who_we_are'>
-                        <div class="gradient-button">
+                        <div className="gradient-button">
                             
                                 <span>Learn More</span>
                             

@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Snapshots.css'
+import { getGalleryImages } from '../../../api/api';
 
 const Snapshots = () => {
     const settings = {
@@ -13,29 +14,10 @@ const Snapshots = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
       };
-    
-        const items = [
-            {
-                item1:'../../../assets/Images/whatweoffer.png'
-            },
-            {
-                item2:''
-            },
-            {
-                item3:''
-            },
-            {
-                item4:''
-            },
-            {
-                item5:''
-            },
-            {
-                item6:''
-            },
-          ];
 
-  return (
+      const {data: items} = getGalleryImages();
+
+      return (
     <div style={{position:'relative'}}>
         <div className="snapshots_overlay"></div>
         <div className="snapshots_title">
@@ -45,7 +27,7 @@ const Snapshots = () => {
         <div className="gallery_slider">
             <Slider {...settings}>
                 {items.map((item, index) => (
-                    <img key={index} src={item} alt="" />
+                    <img key={index} src={item.image} alt="" />
                 ))}
             </Slider>
         </div>
