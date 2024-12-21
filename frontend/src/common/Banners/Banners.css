@@ -16,3 +16,28 @@
     margin: auto;
     text-align: center;
 }
+@media(max-width:900px){
+    .banners{
+        margin-top: 90px;
+        padding: 30px;
+
+    }
+    .banners h1{
+        font-size: 40px;
+    }
+    .banners p{
+        font-size: 18px;
+    }
+}
+@media(max-width:900px){
+    .banners{
+        padding: 25px;
+
+    }
+    .banners h1{
+        font-size: 35px;
+    }
+    .banners p{
+        font-size: 15px;
+    }
+}

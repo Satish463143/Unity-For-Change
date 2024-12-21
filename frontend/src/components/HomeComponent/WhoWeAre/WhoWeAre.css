@@ -83,3 +83,10 @@
     );
     z-index: -1;
   }
+
+  @media(max-width:800px){
+    .wo_we_are_grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+  }

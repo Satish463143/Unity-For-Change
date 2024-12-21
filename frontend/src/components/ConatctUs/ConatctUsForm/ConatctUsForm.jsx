@@ -7,8 +7,8 @@ const ConatctUsForm = () => {
     }
   return (
     <div className='contact_from'>
-        <div className="how_it_start_title" >
-            <h1 style={{fontSize:'35px', marginTop:'0px'}}>send us a message</h1>
+        <div className="how_it_start_title contact_title" >
+            <h1>send us a message</h1>
         </div>
         <div>
             <form action="" onSubmit={handleForm}>

@@ -40,3 +40,48 @@
     padding: 20px 0;
     font-size: 30px;
 }
+@media(max-width:1200px){
+    .activities_grid{
+        grid-template-columns: 32% 32% 32%;
+    }
+    .activities_box{
+        padding: 0 0 30px 0;
+    }
+    .link_button{
+        bottom: 10px;
+    }
+}
+@media(max-width:900px){
+    .activities_grid{
+        grid-template-columns: 45% 45%;
+    }
+}
+@media(max-width:700px){
+    .activities_grid{
+        grid-template-columns: 49% 49%;
+    }
+    .activities_date p{
+        font-size: 15px;
+    }
+    .activities_box h1{
+        font-size: 24px !important;
+
+    }
+
+}
+@media(max-width:600px){
+    .activities_grid{
+        grid-template-columns:90%;
+        justify-content: center;
+    }
+    .activities_box h1{
+        font-size: 20px !important;
+
+    }
+}
+@media(max-width:500px){
+    .activities_grid{
+        grid-template-columns:100%;
+        justify-content: center;
+    }
+}

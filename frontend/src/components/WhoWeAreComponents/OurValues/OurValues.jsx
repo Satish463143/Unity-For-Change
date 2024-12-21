@@ -25,8 +25,6 @@ const OurValues = () => {
                     <h1>Value</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi soluta eum, iure ab atque maxime. Voluptate ducimus dolores delectus repellendus est fuga fugiat illo nihil inventore</p>
                 </div>
-            </div>
-            <div className="our_values_grid" style={{marginTop:'50px'}}>
                 <div className="our_values_box">
                     <img src={values} alt="" />
                     <h1>Value</h1>

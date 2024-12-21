@@ -2,8 +2,6 @@ import React from 'react'
 import './HowItStarted.css'
 import image from '../../../assets/Images/Be-ready-to-support-LGBTQ-youth.png'
 
-
-
 const HowItStarted = () => {
   return (
     <div className='container'>

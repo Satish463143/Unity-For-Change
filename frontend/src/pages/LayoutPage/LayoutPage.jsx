@@ -3,6 +3,7 @@ import Navbar from '../../common/Navbar/Navbar';
 import TopNav from '../../common/TopNav/TopNav';
 import { Outlet,useLocation } from 'react-router-dom';
 import Footer from '../../common/Footer/Footer';
+import MobileNav from '../../common/MobileNav/MobileNav';
 
 const LayoutPage = () => {
 
@@ -27,7 +28,9 @@ const LayoutPage = () => {
     }
   return (
     <div>
+
         <ScrollToTop/>
+        <MobileNav/>
         <TopNav/>
         <Navbar/>
         <Outlet/>

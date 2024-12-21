@@ -24,8 +24,7 @@ const FocousArea = () => {
                 <h1>Heading</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo veritatis accusantium commodi delectus sapiente corrupti provident magnam natus recusandae facere autem architecto, error iure adipisci itaque doloremque odit? Labore, neque?</p>
             </div>
-        </div>    
-        <div className="focous_area" style={{marginTop:'50px'}}>
+        
             <div className="focous_area_box" style={{border:'2px solid var(--pruple)'}}>
                 <img src={image} alt="" />
                 <h1>Heading</h1>
