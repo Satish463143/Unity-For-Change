@@ -25,7 +25,7 @@ const Gallery = () => {
             </div>
         <div className="gallery_grid">
             {sortedProjects.slice(0, visibleCount).map((item, index) => (
-                <img key={index} src={image1} alt={`Gallery ${index}`} />
+                <img key={index} src={item.image} alt={`Gallery ${index}`} />
             ))}
         </div> 
         {visibleCount < sortedProjects.length && (

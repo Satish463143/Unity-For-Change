@@ -119,7 +119,7 @@ export const getHowItStarted = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result);
+                setData(result[0]);
             } catch (err) {
                 setError(err.message);
             } finally {
@@ -145,7 +145,7 @@ export const gethowItsGoing = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result);
+                setData(result[0]);
             } catch (err) {
                 setError(err.message);
             } finally {

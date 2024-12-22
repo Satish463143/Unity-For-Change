@@ -5,6 +5,7 @@ import team from '../../../assets/Images/team.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { getOurTeam } from '../../../api/api';
 
 const OurTeam = () => {
     const settings = {
@@ -17,24 +18,10 @@ const OurTeam = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
     };
-    const ourTeams = [
-        {
-           name:'Satish Mahato',
-           image:'',
-           position:'President',
-           content:'he is webdeveloper' 
-        },
-        {
-           name:'Prayusha Acharaya',
-           image:'',
-           position:'CEO',
-           content:'she is full stack developer' 
-        },
-    ]
-  return (
-
+   
+    const {data: ourTeams} = getOurTeam();
     
-    
+  return ( 
     <div className="our_team">
         <div className='container'>
             <div className="how_it_going_title">
