@@ -42,13 +42,15 @@
     margin-bottom: 60px;
 }
 .what_we_offer_box_image{
+    margin-bottom: 15px;    
     width: 100%;
     height: auto;
 }
 .what_we_offer_box_image img{
     width: 100%;
     height: auto;
-    max-height: 300px;
+    min-height:250px ;
+    max-height: 250px;
     object-fit: cover;
 }
 .what_we_offer_box_content h1 {
