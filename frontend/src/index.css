@@ -24,6 +24,7 @@
     color: var(--pri_text);
   }
   .container{
+    width: 90%;
     margin: auto;  
   }
   body {

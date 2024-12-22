@@ -9,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-
+    margin-top: 50px;
 }
 .our_values_box img{
     width: 150px;
@@ -21,4 +21,25 @@
 }
 .our_values_box h1, .our_values_box p{
     text-align: center;
+}
+@media(max-width:800px){
+    .our_values_grid{
+        grid-template-columns:45% 45%;
+    }
+}
+@media(max-width:600px){
+    .our_values_grid{
+        grid-template-columns:49% 49%;
+    }
+    .our_values_box p{
+        font-size: 15px;
+    }
+    .our_values_box h1{
+        font-size: 23px;
+    }
+}
+@media(max-width:400px){
+    .our_values_grid{
+        grid-template-columns:100%;
+    }
 }

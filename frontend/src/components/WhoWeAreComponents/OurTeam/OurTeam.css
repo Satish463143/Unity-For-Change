@@ -31,3 +31,30 @@
     font-size: 20px;
     
 }
+@media(max-width:800px){
+    .team_slider img{
+        width: 150px;
+    }
+    .how_it_going_title p, .team_slider p{
+        font-size: 18px;
+    }
+}
+@media(max-width:600px){
+    .team_slider img{
+        width: 140px;
+    }
+    .how_it_going_title p, .team_slider p{
+        font-size: 15px;
+    }
+    .team_slider h2{
+        font-size: 20px;
+    }
+    .slick-prev {
+        left: -10px !important;
+    }
+    .slick-arrow.slick-prev, .slick-arrow.slick-next  {
+        width: 30px !important;
+        height: 30px !important;
+
+    }
+}

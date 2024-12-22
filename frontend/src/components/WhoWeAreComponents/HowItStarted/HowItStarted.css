@@ -49,3 +49,37 @@
 .how_it_start_content p{
     font-size: 20px;
 }
+@media(max-width:900px){
+    .how_it_start_title h1{
+        font-size: 50px;
+    }
+    .how_it_start_grid{
+        grid-template-columns: 45% 49%;
+        padding: 20px;
+        padding-top: 40px;
+    }
+    .how_it_start_box{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .how_it_start_title h1, .how_it_going_title h1{
+        font-size: 35px;
+    }
+    .how_it_start_grid{
+        grid-template-columns: 95%;
+        justify-content: center;
+        /* padding: 50px; */
+    }
+    .how_it_start_content{
+        margin-top: 50px;     
+    }
+    .how_it_start_content p{
+        font-size: 17px;
+    }
+}
+@media(max-width:550px){
+    .how_it_start_content p{
+        font-size: 15px;
+    }
+}

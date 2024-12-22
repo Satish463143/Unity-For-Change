@@ -18,5 +18,10 @@
     border-image-slice: 1;
     cursor: pointer;
 }
+@media (max-width:1000px){
+    .gradient-button {
+        padding: 10px 20px;
+    }
+}
 
 

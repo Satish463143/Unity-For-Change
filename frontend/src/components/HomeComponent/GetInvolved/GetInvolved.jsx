@@ -12,9 +12,9 @@ const GetInvolved = () => {
         </div>
         <div className="get_involved">
             <div className="get_involved_content">
-                <p>{data.subtitle}</p>
-                <h1>{data.title}</h1>
-                <h3>{data.date} <br /> {data.time}</h3>
+                <p>{data?.subtitle}</p>
+                <h1>{data?.title}</h1>
+                <h3>{data?.date} <br /> {data?.time}</h3>
             </div>
             <div className="get_involved_image">
                 <img src={get_involved} alt="" />

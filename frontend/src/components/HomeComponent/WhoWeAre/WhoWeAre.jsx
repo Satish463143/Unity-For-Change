@@ -25,18 +25,13 @@ const WhoWeAre = () => {
                        {data.description}
                     </p>
                     <Link to='/who_we_are'>
-                        <div className="gradient-button">
-                            
-                                <span>Learn More</span>
-                            
+                        <div className="gradient-button">                            
+                                <span>Learn More</span>                            
                         </div>
                     </Link>
                 </div>
-
-
             </div>
         </div>
-
     </div>
   )
 }

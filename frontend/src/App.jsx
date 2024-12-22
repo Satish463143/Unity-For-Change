@@ -20,7 +20,7 @@ const App = () => {
           <Route path='/who_we_are' element={<WhoWeArePage/> } />
           <Route path='/what_we_do' element={<WhatWeDo/> } />
           <Route path='/activites' element={<ActivitesPage/> } />
-          <Route path='/galery' element={<GalleryPage/> } />
+          <Route path='/gallery' element={<GalleryPage/> } />
           <Route path='/contact_us' element={<ContactUsPage/> } />
           <Route path='/donate' element={<DonatePage/> } />
           <Route path='/resources' element={<ResourcesPage/> } />

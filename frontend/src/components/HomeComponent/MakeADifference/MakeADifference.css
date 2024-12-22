@@ -77,3 +77,54 @@
 .make_a_difference_box_image_second img:hover{
     transform: scale(1.1);
 }
+@media(max-width:900px){
+    .make_a_difference_grid{
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+    .make_a_difference_box,.make_a_difference_box_grid{
+        margin-bottom: 50px;
+    }
+    .make_a_difference_box_content h2{
+        font-size: 23px;
+    }
+}
+@media(max-width:750px){
+    .make_a_difference_grid{
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px){
+    .make_a_difference_grid,.make_a_difference_box_grid{
+        grid-template-columns: 100%;
+    }
+    .make_a_difference_box,.make_a_difference_box_grid{
+        margin-bottom: 50px;
+    }
+    .make_a_difference_grid{
+        padding-bottom: 0px !important;
+    }
+    .make_a_difference .title h1{
+        color: var(--orange);
+        font-size: 48px;
+    }
+    .make_a_difference .title h2{
+        color: var(--pruple);
+        font-size: 35px;
+    }
+    .make_a_difference_box_content h2{
+        font-size: 20px;
+    }
+}
+@media(max-width:500px){
+    .make_a_difference .title h1{
+        color: var(--orange);
+        font-size: 38px;
+    }
+    .make_a_difference .title h2{
+        color: var(--pruple);
+        font-size: 30px;
+    }
+}

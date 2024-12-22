@@ -3,8 +3,6 @@ import './HowItStarted.css'
 import image from '../../../assets/Images/Be-ready-to-support-LGBTQ-youth.png'
 import { gethowItsGoing, getHowItStarted } from '../../../api/api'
 
-
-
 const HowItStarted = () => {
     const {data} = getHowItStarted();
     console.log(data);

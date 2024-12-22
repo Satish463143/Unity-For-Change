@@ -10,10 +10,8 @@ const DownBanner = () => {
               <h1>Feel free to reach out to us</h1>
               <p>We’d love to hear from you! Whether it’s a query, feedback, or just a hello, don’t hesitate to connect.</p>
               <Link to='/contact_us'>
-                <div className="gradient-button">
-                    
-                        <span>Contact Us</span>
-                    
+                <div className="gradient-button">                    
+                  <span>Contact Us</span>                    
                 </div>
               </Link>
           </div>

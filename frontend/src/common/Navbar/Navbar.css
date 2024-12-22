@@ -33,3 +33,14 @@
     font-weight: 500;
     font-size: 20px;
 }
+@media (max-width:1000px){
+    .nav_menu .menu ul{
+        gap:20px;
+        
+    }
+}
+@media (max-width:900px){
+    .navbar, .topnav{
+        display: none;
+    }
+}

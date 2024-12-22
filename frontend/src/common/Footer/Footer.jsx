@@ -128,8 +128,7 @@ const Footer = () => {
                         </span>
                         <a href="" target='_blank'>www.facebook.com</a>
                     </li>
-                </div>
-                
+                </div>                
                 <div className="menu_link">
                     <h3>Quick Links</h3>
                     <li>
@@ -150,7 +149,7 @@ const Footer = () => {
                         <Link to='/resources'>Resouces</Link>
                     </li>
                     <li>
-                        <Link to='/galery'>Gallery</Link>
+                        <Link to='/gallery'>Gallery</Link>
                     </li>
                     <li>
                         <Link to='/contact_us'>Conatct Us</Link>
