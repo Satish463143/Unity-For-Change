@@ -12,7 +12,7 @@ urlpatterns = [
     path('our-values/', api_views.OurValuesAPIView.as_view()),
     path('our-team/', api_views.OurTeamAPIView.as_view()),
     path('what-we-do/', api_views.WhatWeDoAPIView.as_view()),
-    path('activity/', api_views.ActivityAPIView.as_view()),
+    path('activity/', api_views.ActivityAPIView.as_view({'get': 'list'})),
     path('gallery/', api_views.GalleryAPIView.as_view()),
     path('contact-us/', api_views.ContactUsPostAPIView.as_view()),
     path('get-contact-us/', api_views.ContactUsAPIView.as_view()),
