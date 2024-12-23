@@ -127,7 +127,6 @@ class ActivityAPIView(ModelViewSet):
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
     
-
 class GalleryAPIView(generics.ListAPIView):
     serializer_class = GallerySerializer
     permission_classes = [AllowAny]

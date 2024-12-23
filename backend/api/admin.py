@@ -7,20 +7,22 @@ from django.contrib import admin
 from django.core.files.storage import default_storage
 from .forms import ActivityAdminForm
 
-from django.contrib import admin
-from django.core.files.storage import default_storage
-from .forms import ActivityAdminForm
-
 class ActivityAdmin(admin.ModelAdmin):
-    form = ActivityAdminForm  # Link the custom form
+    form = ActivityAdminForm  # Use the custom form
 
-    def formfield_for_dbfield(self, db_field, request, **kwargs):
-        if db_field.name == "images":
-            # Hide the JSONField in the admin panel
-            return None
-        return super().formfield_for_dbfield(db_field, request, **kwargs)
-    
-# Register the model with the customized admin panel
+    def save_model(self, request, obj, form, change):
+        # Handle the custom multi-upload field
+        uploaded_files = request.FILES.getlist('image_files')  # Matches the form field name
+        image_paths = obj.images or []  # Get existing images or an empty list
+
+        for file in uploaded_files:
+            file_path = default_storage.save(f'uploads/{file.name}', file)
+            image_paths.append(file_path)
+
+        obj.images = image_paths  # Update the JSONField with the new file paths
+        super().save_model(request, obj, form, change)
+
+# Register the model and the customized admin class
 admin.site.register(api_models.Activity, ActivityAdmin)
 
 admin.site.register(api_models.HomeBanner)

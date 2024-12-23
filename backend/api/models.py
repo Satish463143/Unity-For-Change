@@ -78,10 +78,7 @@ class Activity(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
     description = models.TextField()  # Or RichTextField
-    images = forms.ImageField(
-        widget=forms.ClearableFileInput(attrs={'multiple': True}),
-        required=True
-    )
+    images = models.ImageField(upload_to=upload_to_unique)
     thumbnail_image = models.ImageField(upload_to='thumbnails/', blank=True, null=True)
     date = models.DateField()
     location = models.CharField(max_length=255)
