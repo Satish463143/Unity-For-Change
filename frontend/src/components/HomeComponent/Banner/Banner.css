@@ -31,7 +31,6 @@
 .banner_content h1{
     color: var(--white);
     font-size: 40px;
-
 }
 
 
@@ -112,6 +111,14 @@
     display: none;
 }
 
+@media (max-width:900px){
+  .banner_content .gradient_text{
+    font-size: 60px;
+  }
+  .banner_content{
+    margin-top: 80px;
+  }
+}
 @media (max-width:700px){
     .desktop_iamge{
         display: none;
@@ -119,4 +126,25 @@
     .mobile_image{
         display: block;
     }
+    .banner_content .gradient_text{
+      font-size: 40px;
+    }
+    .banner_content h1{
+      font-size: 30px;
+      margin-bottom: 15px;
+  }
+  .filled-button, .outlined-button { 
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+  
+}
+@media (max-width:500px){
+  .banner_content .gradient_text{
+    font-size: 35px;
+  }
+  .banner_content h1{
+    font-size: 25px;
+    line-height: 1;
+}
 }

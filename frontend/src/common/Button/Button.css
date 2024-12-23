@@ -7,7 +7,7 @@
 }
 .gradient-button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
     color: black;
@@ -20,7 +20,13 @@
 }
 @media (max-width:1000px){
     .gradient-button {
-        padding: 10px 20px;
+        padding: 10px 15px;
+    }
+}
+@media (max-width:500px){
+    .gradient-button {
+        padding: 7px 15px;
+        font-size: 14px;
     }
 }
 

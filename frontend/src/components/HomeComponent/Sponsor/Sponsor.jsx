@@ -19,6 +19,24 @@ const Sponsor = () => {
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
         afterChange: (current) => setActiveIndex(current), // Track the active element
+        responsive: [
+            {
+                breakpoint: 700, // Max width 600px
+                settings: {
+                    slidesToShow: 2, // Show only 1 slide at a time
+                    slidesToScroll: 1, // Scroll one slide at a time
+                    centerMode: false, // Disable center mode for small screens
+                },
+            },
+            {
+                breakpoint: 500, // Max width 600px
+                settings: {
+                    slidesToShow: 1, // Show only 1 slide at a time
+                    slidesToScroll: 1, // Scroll one slide at a time
+                    centerMode: false, // Disable center mode for small screens
+                },
+            },
+        ],
     };
 
     const {data: items} = getSponsors();

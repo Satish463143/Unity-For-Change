@@ -49,21 +49,30 @@
 .how_it_going_content p{
     font-size: 20px;
 }
+@media(max-width:900px){
+    .how_it_going_title h1{
+        font-size: 50px;
+    }
+    .how_it_going_grid{
+        grid-template-columns: 49% 47%;
+        padding: 40px 20px 40px 20px;
+    }
+    .how_it_start_box{
+        width: 100%;
+    }
+}
 @media(max-width:700px){
      .how_it_going_title h1{
         font-size: 35px;
+        margin-top: 40px;
     }
     .how_it_going_grid{
         grid-template-columns: 95%;
         justify-content: center;
-        padding: 20px;
-        padding-top: 40px;
     }
-    .how_it_going_box{
-        margin-top: 50px;        
-        margin-bottom: 40px;   
-    }
-    how_it_going_content p{
+    .how_it_going_box{  
+        margin:50px auto 20px auto;    }
+    .how_it_going_content p{
         font-size: 17px;
     }
 }

@@ -45,10 +45,11 @@
     margin-bottom: 20px;
 }
 .who_we_are_content .gradient-button {
+    margin-top: 30px;
     position: relative;
     display: inline-block;
-    padding: 10px 30px;
-    font-size: 1.2rem;
+    padding: 8px 20px;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--white);
     text-transform: uppercase;
@@ -90,6 +91,10 @@
         width: 100%;
         height: 400px;
     }
+    .who_we_are_content p{
+        max-width: 70%;
+        text-align: start;
+    }
  }
   @media(max-width:800px){
     .wo_we_are_grid{
@@ -104,10 +109,7 @@
         align-items: start;
         margin-top: 50px;
     }
-    .who_we_are_content p{
-        max-width: 70%;
-        text-align: start;
-    }
+    
     
   }
   @media(max-width:600px){
@@ -120,8 +122,10 @@
         font-size: 15px;
     }
     .who_we_are_content .gradient-button {
-        padding: 10px 30px;
-        font-size: 1rem;
+        padding: 8px 20px;
+        font-size: 18px;
+        margin-top: 10px;
+
     }
     .who_we_are_content .gradient-button {
         font-size:15px;

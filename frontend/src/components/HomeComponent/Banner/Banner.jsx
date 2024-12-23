@@ -1,6 +1,5 @@
 import React from 'react'
 import './Banner.css'
-import bannerImage from '../../../assets/Images/banner.webp'
 import { Link } from 'react-router-dom'
 import {getHomeBanner} from '../../../api/api'
 

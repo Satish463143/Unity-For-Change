@@ -1,5 +1,5 @@
 .navbar {
-    background: var(--white);
+    background: linear-gradient(to bottom,  var(--white), pink);;
     transition: top 0.3s ease-in-out; 
     width: 100%;
     position: sticky;

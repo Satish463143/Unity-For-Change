@@ -13,6 +13,22 @@ const Snapshots = () => {
         slidesToScroll: 1, // Scroll one element at a time
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
+        responsive: [
+          {
+              breakpoint: 1000, // Max width 600px
+              settings: {
+                  slidesToShow: 3, // Show only 1 slide at a time
+                  slidesToScroll: 1, // Scroll one slide at a time
+              },
+          },
+          {
+              breakpoint: 700, // Max width 600px
+              settings: {
+                  slidesToShow: 2, // Show only 1 slide at a time
+                  slidesToScroll: 1, // Scroll one slide at a time
+              },
+          },
+      ],
       };
 
       const {data: items} = getGalleryImages();
@@ -24,12 +40,14 @@ const Snapshots = () => {
             <h1>snapshots</h1>
             <p>A vibrant display of our best moments, projects, and achievements.</p>
         </div>
-        <div className="gallery_slider">
-            <Slider {...settings}>
-                {items.map((item, index) => (
-                    <img key={index} src={item.image} alt="" />
-                ))}
-            </Slider>
+        <div className="container">
+          <div className=" gallery_slider">
+              <Slider {...settings}>
+                  {items.map((item, index) => (
+                      <img key={index} src={item.image} alt="" />
+                  ))}
+              </Slider>
+          </div>
         </div>
         
 

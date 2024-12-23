@@ -54,6 +54,7 @@
 
 }
 .make_a_difference_box_grid{
+    margin-bottom: 10px;
     width: 100%;
     display: grid;
     grid-template-columns: 48% 48%;
@@ -116,6 +117,16 @@
     }
     .make_a_difference_box_content h2{
         font-size: 20px;
+    }
+    .make_a_difference_box_image_second{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .make_a_difference_box_image_second img{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 20px;
     }
 }
 @media(max-width:500px){

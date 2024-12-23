@@ -24,6 +24,9 @@
         font-size: 50px;
         
     }
+    .sponsors .title{
+        margin: 40px 0;
+    }
 }
 @media(max-width:600px){
     .sponsors .title h1{
