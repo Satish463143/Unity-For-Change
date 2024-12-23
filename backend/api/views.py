@@ -123,9 +123,11 @@ class WhatWeDoAPIView(generics.ListAPIView):
     def get_queryset(self):
         return WhatWeDo.objects.all()
 
-class ActivityAPIView(ModelViewSet):
-    queryset = Activity.objects.all()
-    serializer_class = ActivitySerializer
+class ActivityAPIView(APIView):
+    def get(self, request):
+        activities = Activity.objects.all()
+        serializer = ActivitySerializer(activities, many=True)
+        return Response(serializer.data)
     
 class GalleryAPIView(generics.ListAPIView):
     serializer_class = GallerySerializer

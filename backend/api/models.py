@@ -74,17 +74,26 @@ class WhatWeDo(models.Model):
     def __str__(self):
         return self.title
 
+def upload_to_unique(instance, filename):
+    return f'activities/{instance.activity.id}/{filename}'
+
 class Activity(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
     description = models.TextField()  # Or RichTextField
-    images = models.ImageField(upload_to=upload_to_unique)
     thumbnail_image = models.ImageField(upload_to='thumbnails/', blank=True, null=True)
     date = models.DateField()
     location = models.CharField(max_length=255)
 
     def __str__(self):
         return self.title
+
+class ActivityImages(models.Model):
+    activity = models.ForeignKey(Activity, related_name='images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to=upload_to_unique)
+
+    def __str__(self):
+        return f"Image for {self.activity.title}"
 
 class Gallery(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
