@@ -16,6 +16,7 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework.viewsets import ModelViewSet
 
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
@@ -122,12 +123,9 @@ class WhatWeDoAPIView(generics.ListAPIView):
     def get_queryset(self):
         return WhatWeDo.objects.all()
 
-class ActivityAPIView(generics.ListAPIView):
+class ActivityAPIView(ModelViewSet):
+    queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
-    permission_classes = [AllowAny]
-
-    def get_queryset(self):
-        return Activity.objects.all()
 
 class GalleryAPIView(generics.ListAPIView):
     serializer_class = GallerySerializer

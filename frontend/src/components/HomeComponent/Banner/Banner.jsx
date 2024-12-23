@@ -11,7 +11,7 @@ const Banner = () => {
     <div className='banner'>
         <div className="banner_img">
             <img className='desktop_iamge' src={homeBanner.image} alt="" />
-            <img className='mobile_image' src={bannerImage.image} alt="" />
+            <img className='mobile_image' src={homeBanner.mobileImage} alt="" />
         </div>
         <div className='banner_overlay'></div>
         <div className="container">

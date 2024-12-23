@@ -12,6 +12,7 @@ class HomeBanner(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
+    mobileImage = models.ImageField(upload_to=upload_to_unique)
 
     def __str__(self):
         return self.title
@@ -75,13 +76,20 @@ class Activity(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
     description = RichTextField()
-    images = models.ImageField(upload_to=upload_to_unique, blank=True, null=True)
     thumbnail_image = models.ImageField(upload_to=upload_to_unique, blank=True, null=True)
     date = models.DateField()
     location = models.CharField(max_length=255)
 
     def __str__(self):
         return self.title
+
+
+class ActivityImage(models.Model):
+    activity = models.ForeignKey(Activity, related_name='images', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to=upload_to_unique)
+
+    def __str__(self):
+        return f"Image for {self.activity.title}"
 
 class Gallery(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
