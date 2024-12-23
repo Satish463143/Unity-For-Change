@@ -10,7 +10,6 @@ from .models import (
     OurTeam,
     WhatWeDo,
     Activity,
-    ActivityImage,
     Gallery,
     ContactUs,
     Resource,
@@ -62,17 +61,11 @@ class WhatWeDoSerializer(serializers.ModelSerializer):
         model = WhatWeDo
         fields = '__all__'
 
-class ActivityImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ActivityImage
-        fields = ['id', 'image']
-
 class ActivitySerializer(serializers.ModelSerializer):
-    images = ActivityImageSerializer(many=True, read_only=True)  # Related images
-
     class Meta:
         model = Activity
         fields = ['id', 'title', 'subtitle', 'description', 'thumbnail_image', 'date', 'location', 'images']
+
 
 class GallerySerializer(serializers.ModelSerializer):
     class Meta:
