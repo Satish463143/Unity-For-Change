@@ -1,3 +1,3 @@
-export const API_BASE_URL = "http://127.0.0.1:8000/api/v1";
-export const SERVER_URL = "http://127.0.0.1:8000";
-export const CLIENT_URL = "http://localhost:5173/";
+export const API_BASE_URL = "https://api.unity4change.org.np/api/v1";
+export const SERVER_URL = "https://api.unity4change.org.np/";
+export const CLIENT_URL = "https://unity4change.org.np/";
