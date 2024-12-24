@@ -1,9 +1,7 @@
 from django.db import models
-from ckeditor.fields import RichTextField  # Assuming you're using CKEditor for rich text support
 import os
 import uuid
 from django import forms
-
 
 def upload_to_unique(instance, filename):
     ext = filename.split('.')[-1]

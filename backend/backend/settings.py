@@ -35,15 +35,13 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'jazzmin',
 
-    'ckeditor',
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     #Custom Apps
     'api',
 
@@ -51,7 +49,10 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
-    'drf_yasg'
+    'drf_yasg',
+
+    #auto file delete
+    'django_cleanup.apps.CleanupConfig'
 ]
 
 MIDDLEWARE = [
