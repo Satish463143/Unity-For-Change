@@ -75,7 +75,10 @@ const MakeADifference = () => {
                         </p>
                         <hr />
                         <h2>{data[0]?.title}</h2>
-                        <Link to=''>                   
+                        <Link 
+                            to={`/project_details/${data[0]?.id}`} 
+                            state={{activity: data[0]}}
+                        >                   
                             <Button content="Learn more"/>
                         </Link>
                     </div>
@@ -141,7 +144,9 @@ const MakeADifference = () => {
                                 </p>
                                 <hr />
                                 <h2>{data.title}</h2>
-                                <Link to=''>                   
+                                <Link to={`/project_details/${data.id}`} 
+                                        state={{activity: data}}
+                                >                   
                                     <Button content="Learn more"/>
                                 </Link>
                             </div>

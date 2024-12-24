@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import './Gallery.css'
-import image1 from '../../../assets/Images/image-lgbtq-plus.jpg' 
+import { Link } from 'react-router-dom'
 import Button from '../../../common/Button/Button'
 import { getGalleryImages } from '../../../api/api'
 
@@ -25,7 +25,7 @@ const Gallery = () => {
             </div>
         <div className="gallery_grid">
             {sortedProjects.slice(0, visibleCount).map((item, index) => (
-                <img key={index} src={item.image} alt={`Gallery ${index}`} />
+               <Link to={item.image}><img key={index} src={item.image} alt={`Gallery ${index}`} /></Link>
             ))}
         </div> 
         {visibleCount < sortedProjects.length && (
