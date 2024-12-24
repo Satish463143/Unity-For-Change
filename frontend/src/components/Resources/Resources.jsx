@@ -5,7 +5,6 @@ import { getResources } from '../../api/api'
 
 const Resources = () => {
     const {data: documents} = getResources()
-    console.log(documents)
 
     return (
     <div className='container'>

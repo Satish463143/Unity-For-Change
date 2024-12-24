@@ -5,7 +5,6 @@ import { getOurValues } from '../../../api/api';
 
 const OurValues = () => {
     const { data } = getOurValues();
-    console.log(data);
 
     return (
         <div className='container'>

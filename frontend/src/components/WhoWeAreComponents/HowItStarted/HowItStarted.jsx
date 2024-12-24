@@ -5,7 +5,6 @@ import { gethowItsGoing, getHowItStarted } from '../../../api/api'
 
 const HowItStarted = () => {
     const {data} = getHowItStarted();
-    console.log(data);
   return (
     <div className='container'>
         <div className="how_it_start">

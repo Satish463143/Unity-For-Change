@@ -1,7 +1,6 @@
 import React from 'react'
 
 const ResourceItem = ({documents, description, title}) => {
-  console.log(documents)
   return (
     <div className='resource_box'>
         <h1>{title}</h1>

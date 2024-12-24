@@ -5,7 +5,6 @@ import { getWhatWeDo } from '../../../api/api'
 
 const FocousArea = () => {
     const {data} = getWhatWeDo();
-    console.log(data)
   return (
     <div className='container'>
         <div className="how_it_start_title">
