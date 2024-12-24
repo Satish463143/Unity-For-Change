@@ -9,7 +9,6 @@ import { getAllActivities } from '../../../api/api'
 
 const MakeADifference = () => {
     const {data, error, loading} = getAllActivities();
-    console.log(data[0])
 
   return (
     <div className='make_a_difference'>

@@ -11,7 +11,7 @@ const Activities = () => {
     <div className='container'>
         <div className="activities_grid">
             {activities.map((item,index)=>(
-                <ActivitiesItem key={index} id={item._id} title={item.title} date={item.date} location={item.location} image={item.thumbnail_image}/>
+                <ActivitiesItem key={index} activity={item} />
             ))}
         </div>      
     </div>

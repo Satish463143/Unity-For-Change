@@ -1,31 +1,20 @@
 import React from 'react'
+import { useLocation } from 'react-router-dom';
 import ProjectsDetailsBanner from './ProjectsDetailsBanner'
 import ProjectDetailsItem from './ProjectDetailsItem'
 
 
 const ProjectsDetails = () => {
-    const project = [
-        {
-            title:'Title 1',
-            shortContent:'Here is the short content',
-            description:'Here isi the short description',
-            images:[
-               'image1',
-               'image2',
-               'image3',
-               'image4',
-               'image5',
-            ]
-        }
-    ]
+    const location = useLocation();
+    const { activity } = location.state || {};
+
   return (
     <div>
-        {project.map((item, index)=>{
-            return <div key={index}>
-                <ProjectsDetailsBanner title={item.title} shortContent={item.shortContent}/>
-                <ProjectDetailsItem description={item.description} images={item.images} />
+            <div>
+                <ProjectsDetailsBanner title={activity.title} shortContent={activity.subtitle}/>
+                <ProjectDetailsItem description={activity.description} images={activity.images} />
             </div>
-        })}    
+            
     </div>
   )
 }

@@ -1,11 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const ActivitiesItem = ({id,image,date,location, title}) => {
+const ActivitiesItem = ({activity}) => {
   return (
     <div className='activities_box'>
-        <Link to={`/project_details/${id}`} >
-            <img src={image} alt="" /> 
+        <Link to={`/project_details/${activity.id}`} 
+        state={{activity}}
+        >
+            <img src={activity.thumbnail_image} alt="" /> 
             <div className="activities_date">
                 <p style={{display:'flex', alignItems:'center', gap:'8px'}}>
                     <span>
@@ -16,7 +18,7 @@ const ActivitiesItem = ({id,image,date,location, title}) => {
                                 <path d="M19,6.184V6c0-1.657-1.343-3-3-3s-3,1.343-3,3h-2c0-1.657-1.343-3-3-3S5,4.343,5,6v0.184C3.839,6.599,3,7.698,3,9v9   c0,1.654,1.346,3,3,3h12c1.654,0,3-1.346,3-3V9C21,7.698,20.161,6.599,19,6.184z M15,6c0-0.552,0.447-1,1-1s1,0.448,1,1v2   c0,0.552-0.447,1-1,1s-1-0.448-1-1V6z M7,6c0-0.552,0.447-1,1-1s1,0.448,1,1v2c0,0.552-0.447,1-1,1S7,8.552,7,8V6z M19,18   c0,0.551-0.448,1-1,1H6c-0.552,0-1-0.449-1-1v-6h14V18z M19,11H5V9c0-0.551,0.448-1,1-1c0,1.104,0.896,2,2,2s2-0.896,2-2h4   c0,1.104,0.896,2,2,2s2-0.896,2-2c0.552,0,1,0.449,1,1V11z"/></g>
                         </svg>
                     </span>
-                    <p>{date}</p>
+                    <p>{activity.date}</p>
                 </p>
                 <p style={{display:'flex', alignItems:'center', gap:'8px'}}>
                     <span>
@@ -38,12 +40,12 @@ const ActivitiesItem = ({id,image,date,location, title}) => {
                             </g>
                         </svg>
                     </span>
-                    <p>{location}</p>
+                    <p>{activity.location}</p>
                 </p>
                 
             </div>  
             <hr />
-            <h1>{title}</h1>  
+            <h1>{activity.title}</h1>  
             <div className="link_button">
                 <h4>View details</h4> 
                 <span>
