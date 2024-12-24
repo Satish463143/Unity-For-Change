@@ -16,6 +16,9 @@ class HomeBanner(models.Model):
     subtitle = models.CharField(max_length=500)
     mobileImage = models.ImageField(upload_to=upload_to_unique)
 
+    class Meta:
+        verbose_name_plural = "Home Banner"
+
     def __str__(self):
         return self.title
 
@@ -34,6 +37,9 @@ class GetInvolved(models.Model):
     date = models.DateField()
     time = models.TimeField()
 
+    class Meta:
+        verbose_name_plural = "Get Involved"
+
     def __str__(self):
         return self.title
 
@@ -41,18 +47,30 @@ class WhoWeAre(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     description = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "Who We Are"
+
 class HowItStarted(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     description = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "How It Started"
 
 class HowItsGoing(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     description = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "How Its Going"
+
 class OurValues(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     heading = models.CharField(max_length=255)
     description = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "Our Values"
 
     def __str__(self):
         return self.heading
@@ -63,6 +81,9 @@ class OurTeam(models.Model):
     designation = models.CharField(max_length=255)
     description = models.TextField()
 
+    class Meta:
+        verbose_name_plural = "Our Team"
+
     def __str__(self):
         return self.name
 
@@ -70,6 +91,9 @@ class WhatWeDo(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     title = models.CharField(max_length=255)
     description = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "What We Do"
 
     def __str__(self):
         return self.title
@@ -81,6 +105,9 @@ class Activity(models.Model):
     thumbnail_image = models.ImageField(upload_to=upload_to_unique)
     date = models.DateField()
     location = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name_plural = "Activities"
 
     def __str__(self):
         return self.title
@@ -95,11 +122,17 @@ class ActivityImages(models.Model):
 class Gallery(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
 
+    class Meta:
+        verbose_name_plural = "Gallery Images"
+
 class ContactUs(models.Model):
     full_name = models.CharField(max_length=255)
     email = models.EmailField()
     number = models.CharField(max_length=15)
     message = models.TextField()
+
+    class Meta:
+        verbose_name_plural = "Inquiries"
 
     def __str__(self):
         return self.full_name
