@@ -13,7 +13,6 @@ const Activities = () => {
             {activities.map((item,index)=>(
                 <ActivitiesItem key={index} id={item._id} title={item.title} date={item.date} location={item.location} image={item.thumbnail_image}/>
             ))}
-            
         </div>      
     </div>
   )

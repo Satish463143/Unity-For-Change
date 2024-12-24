@@ -74,14 +74,11 @@ class WhatWeDo(models.Model):
     def __str__(self):
         return self.title
 
-def upload_to_unique(instance, filename):
-    return f'activities/{instance.activity.id}/{filename}'
-
 class Activity(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
     description = models.TextField()  # Or RichTextField
-    thumbnail_image = models.ImageField(upload_to='thumbnails/', blank=True, null=True)
+    thumbnail_image = models.ImageField(upload_to=upload_to_unique)
     date = models.DateField()
     location = models.CharField(max_length=255)
 
