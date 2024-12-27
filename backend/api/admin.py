@@ -1,5 +1,18 @@
 from api import models as api_models
 from django.contrib import admin
+from django.utils.html import format_html
+
+class GalleryAdmin(admin.ModelAdmin):
+    list_display = ('image_preview',)
+
+    def image_preview(self, obj):
+        if obj.image:
+            return format_html('<img src="{}" style="width: 100px; height: auto;" />', obj.image.url)
+        return "No Image"
+
+    image_preview.short_description = 'Image Preview'
+
+admin.site.register(api_models.Gallery, GalleryAdmin)
 
 class ActivityImagesInline(admin.StackedInline):  # Use StackedInline for same-page display
     model = api_models.ActivityImages
@@ -26,6 +39,6 @@ admin.site.register(api_models.OurValues)
 admin.site.register(api_models.OurTeam)
 # admin.site.register(api_models.Activity)
 admin.site.register(api_models.WhatWeDo)
-admin.site.register(api_models.Gallery)
+# admin.site.register(api_models.Gallery)
 admin.site.register(api_models.Resource)
 admin.site.register(api_models.Sponsor)
