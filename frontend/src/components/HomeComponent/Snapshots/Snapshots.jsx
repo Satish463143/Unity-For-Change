@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Snapshots.css'
 import { getGalleryImages } from '../../../api/api';
+import { Link } from 'react-router-dom';
 
 const Snapshots = () => {
     const settings = {
@@ -44,7 +45,7 @@ const Snapshots = () => {
           <div className=" gallery_slider">
               <Slider {...settings}>
                   {items.map((item, index) => (
-                      <img key={index} src={item.image} alt="" />
+                      <Link to={item.image}><img key={index} src={item.image} alt="" /></Link>
                   ))}
               </Slider>
           </div>

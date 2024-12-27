@@ -69,6 +69,14 @@
 
     }
 }
+@media(max-width:950px){
+    .what_we_offer_box_content h1 {
+        font-size: 22px;
+    }
+    .what_we_offer_box_content p {
+        font-size: 17px;
+    }
+}
 @media(max-width:800px){
     .what_we_offer_grid{
         grid-template-columns: 45% 45%;
@@ -80,9 +88,7 @@
     .what_we_offer_box_content h1 {
         font-size: 24px;
     }
-    .what_we_offer_box_content p {
-        font-size: 18px;
-    }
+    
 }
 @media(max-width:700px){
     .what_we_offer_grid{

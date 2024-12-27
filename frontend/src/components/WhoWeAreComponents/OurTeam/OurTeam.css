@@ -21,7 +21,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-
+    object-fit: cover;
 }
 .team_slider h2{
     margin: 10px 0;
