@@ -5,14 +5,12 @@ import Button from '../../../common/Button/Button'
 import { getGalleryImages } from '../../../api/api'
 
 const Gallery = () => {
-    const {data: gallery} = getGalleryImages()
+    const {data:gallery} = getGalleryImages()
     const [visibleCount, setVisibleCount] = useState(8);
 
-    // Sort projects by newest first
     const sortedProjects = gallery
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Function to load more images
     const loadMore = () => {
         setVisibleCount(prevCount => prevCount + 8); // Load 9 more each time
     };
