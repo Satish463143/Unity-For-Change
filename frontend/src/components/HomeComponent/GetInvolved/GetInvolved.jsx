@@ -17,7 +17,7 @@ const GetInvolved = () => {
                 <h3>{data?.date} <br /> {data?.time}</h3>
             </div>
             <div className="get_involved_image">
-                <img src={get_involved} alt="" />
+                <img src={data.image} alt="" />
             </div>
         </div>
         
