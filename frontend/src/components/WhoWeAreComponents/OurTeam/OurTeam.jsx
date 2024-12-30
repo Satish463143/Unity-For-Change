@@ -31,7 +31,7 @@ const OurTeam = () => {
             <div className="our_team_slider">
                 <Slider {...settings}>
                     {ourTeams.map((item,index)=>(
-                        <OurTeamSlider key={index} name={item.name} image={item.image} position={item.position} content={item.content}/>
+                        <OurTeamSlider key={index} name={item.name} image={item.image} position={item.designation} content={item.description}/>
                     ))}   
                 </Slider>             
             </div>
