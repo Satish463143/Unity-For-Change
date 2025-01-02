@@ -2,7 +2,6 @@ import React from 'react'
 import './ProjectsDetails.css'
 
 const ProjectDetailsItem = ({description, images}) => {
-  console.log(images)
   return (
     <div className='container project_content'>
         <p>{description}</p>

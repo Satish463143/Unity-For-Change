@@ -7,7 +7,6 @@ import ProjectDetailsItem from './ProjectDetailsItem'
 const ProjectsDetails = () => {
     const location = useLocation();
     const { activity } = location.state || {};
-    console.log(activity)
 
   return (
     <div>
