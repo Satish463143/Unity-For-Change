@@ -45,7 +45,7 @@ const Snapshots = () => {
           <div className=" gallery_slider">
               <Slider {...settings}>
                   {items.map((item, index) => (
-                      <Link to={item.image}><img key={index} src={item.image} alt="" /></Link>
+                      <a href={item.image} target='_blank'><img key={index} src={item.image} alt="" /></a>
                   ))}
               </Slider>
           </div>

@@ -27,6 +27,9 @@
     position: relative;
     background: var(--blue);
     transform: rotate(5deg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .how_it_start_image {
     position: absolute;

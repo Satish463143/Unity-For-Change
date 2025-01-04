@@ -34,6 +34,9 @@
     font-optical-sizing: auto;
     font-style: normal;    
   }
+  html {
+    scroll-behavior: smooth;
+}
   @media (min-width: 601px) and (max-width: 1300px) {
     .container {
       max-width: 90%;

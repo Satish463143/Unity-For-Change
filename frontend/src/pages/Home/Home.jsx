@@ -13,12 +13,13 @@ const Home = () => {
   return (
     <div>
       <Banner/>
-      <WhatWeOffer/>
-      <GetInvolved/>
+      <WhatWeOffer/>        
+     
       <WhoWeAre/>
       <MakeADifference/>
-      <Snapshots/>
+      <Snapshots/>           
       <Sponsor/>
+      <GetInvolved/> 
       <DownBanner/>  
     </div>
   )

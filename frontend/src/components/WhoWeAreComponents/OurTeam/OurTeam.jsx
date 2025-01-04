@@ -22,7 +22,7 @@ const OurTeam = () => {
     const {data: ourTeams} = getOurTeam();
     
   return ( 
-    <div className="our_team">
+    <div className="our_team" id='ourTeam'>
         <div className='container'>
             <div className="how_it_going_title">
                 <h1>Our team</h1>

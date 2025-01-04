@@ -7,7 +7,7 @@ const OurValues = () => {
     const { data } = getOurValues();
 
     return (
-        <div className='container'>
+        <div className='container' id='ourValues'>
             <div className="our_values">
                 <div className="how_it_start_title">
                     <h1>our values</h1>

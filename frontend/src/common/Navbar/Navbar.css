@@ -33,6 +33,36 @@
     font-weight: 500;
     font-size: 20px;
 }
+.dropdownMenu {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    position: relative;
+}
+.dropdownMenu span{
+    margin-top: 5px;
+}
+.dropdownMenu:hover .submenu{
+    display: block;
+}
+.submenu{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 120%;
+    display: none;
+
+}
+.submenu li{
+    padding: 15px 0px 15px 10px;
+    background: var(--white);
+    border-bottom: 1px solid grey;
+    transition: 0.5s ease;
+}
+.submenu li:hover{
+    font-weight: 600 !important;    
+}
 @media (max-width:1000px){
     .nav_menu .menu ul{
         gap:20px;

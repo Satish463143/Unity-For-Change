@@ -7,9 +7,9 @@ const HowItStarted = () => {
     const {data} = getHowItStarted();
   return (
     <div className='container'>
-        <div className="how_it_start">
+        <div className="how_it_start" id='howItStart'>
             <div className="how_it_start_title">
-                <h1>how it started</h1>
+                <h1>our story</h1>
             </div>
             <div className="how_it_start_grid">
                 <div className="how_it_start_box">
