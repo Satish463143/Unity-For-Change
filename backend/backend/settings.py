@@ -58,8 +58,7 @@ INSTALLED_APPS = [
 
 CKEDITOR_5_CONFIGS = {
     'default': {
-        'toolbar': ['heading', '|', 'bold', 'italic', 'link',
-                    'bulletedList', 'numberedList', 'blockQuote', ],
+        'toolbar': ['heading', '|', 'bold', 'italic', 'bulletedList', 'link', 'alignment', 'blockQuote', 'numberedList', ],
     },
 }
 
