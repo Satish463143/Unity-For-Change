@@ -34,6 +34,7 @@ class GetInvolved(models.Model):
     subtitle = models.CharField(max_length=500)
     date = models.DateField()
     time = models.TimeField()
+    location = models.CharField(max_length=100)
 
     class Meta:
         verbose_name_plural = "Get Involved"
@@ -101,8 +102,8 @@ class Activity(models.Model):
     subtitle = models.CharField(max_length=500)
     description = models.TextField()  # Or RichTextField
     thumbnail_image = models.ImageField(upload_to=upload_to_unique)
-    date = models.DateField()
-    location = models.CharField(max_length=255)
+    date = models.DateField(blank=True, null=True)
+    location = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Activities"
@@ -122,6 +123,12 @@ class Gallery(models.Model):
 
     class Meta:
         verbose_name_plural = "Gallery Images"
+
+class Video(models.Model):
+    youtubeLink = models.CharField(max_length=500)
+
+    class Meta:
+        verbose_name_plural = "Youtube Videos"
 
 class ContactUs(models.Model):
     full_name = models.CharField(max_length=255)

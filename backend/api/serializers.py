@@ -15,6 +15,7 @@ from .models import (
     ContactUs,
     Resource,
     Sponsor,
+    Video,
 )
 
 class HomeBannerSerializer(serializers.ModelSerializer):
@@ -81,6 +82,11 @@ class ActivitySerializer(serializers.ModelSerializer):
 class GallerySerializer(serializers.ModelSerializer):
     class Meta:
         model = Gallery
+        fields = '__all__'
+
+class VideoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Video
         fields = '__all__'
 
 class ContactUsSerializer(serializers.ModelSerializer):

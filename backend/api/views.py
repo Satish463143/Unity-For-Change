@@ -42,6 +42,7 @@ from .models import (
     ContactUs,
     Resource,
     Sponsor,
+    Video,
 )
 from .serializers import (
     HomeBannerSerializer,
@@ -58,6 +59,7 @@ from .serializers import (
     ContactUsSerializer,
     ResourceSerializer,
     SponsorSerializer,
+    VideoSerializer,
 )
 
 class HomeBannerAPIView(generics.ListAPIView):
@@ -136,6 +138,13 @@ class GalleryAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         return Gallery.objects.all()
+
+class VideoAPIView(generics.ListAPIView):
+    serializer_class = VideoSerializer
+    permission_classes = [AllowAny]
+
+    def get_queryset(self):
+        return Video.objects.all()
 
 class ContactUsAPIView(generics.ListAPIView):
     serializer_class = ContactUsSerializer

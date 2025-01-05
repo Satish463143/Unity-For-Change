@@ -16,6 +16,10 @@ class ActivityAdmin(admin.ModelAdmin):
 class ContactUsAdmin(admin.ModelAdmin):
     list_display = ('full_name','email','number','message')
 
+@admin.register(api_models.Video)
+class VideoAdmin(admin.ModelAdmin):
+    list_display = ('youtubeLink',)
+
 admin.site.register(api_models.HomeBanner)
 admin.site.register(api_models.WhatWeOffer)
 admin.site.register(api_models.GetInvolved)
@@ -24,7 +28,6 @@ admin.site.register(api_models.HowItStarted)
 admin.site.register(api_models.HowItsGoing)
 admin.site.register(api_models.OurValues)
 admin.site.register(api_models.OurTeam)
-# admin.site.register(api_models.Activity)
 admin.site.register(api_models.WhatWeDo)
 admin.site.register(api_models.Gallery)
 admin.site.register(api_models.Resource)
