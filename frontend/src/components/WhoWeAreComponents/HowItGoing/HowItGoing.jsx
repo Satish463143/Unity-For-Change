@@ -7,7 +7,7 @@ const HowItGoing = () => {
     const {data} = gethowItsGoing();
   return (
     <div className='container'>
-        <div className="how_it_going">
+        <div className="how_it_going" id='howItsGoing'>
             <div className="how_it_going_title">
                 <h1>how its going</h1>
             </div>

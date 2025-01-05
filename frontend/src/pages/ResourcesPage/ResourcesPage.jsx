@@ -6,7 +6,7 @@ const ResourcesPage = () => {
   return (
     <div>
         <hr />
-        <Banners content='Discover guides, articles, and tools designed to support and empower the LGBTQ+ community. Stay informed, stay connected, and embrace equality.' title='RESOURCES'/>
+        <Banners content='Discover guides, articles, and tools designed to support and empower the LBT+ community. Stay informed, stay connected, and embrace equality.' title='RESOURCES'/>
         <Resources/>
     </div>
   )

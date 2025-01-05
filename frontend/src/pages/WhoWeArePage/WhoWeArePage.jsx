@@ -9,10 +9,10 @@ const WhoWeArePage = () => {
   return (
     <div>
         <hr />
-        <Banners title='WHO ARE WE' content="Learn more about our organization, our mission, vision, and the passionate team dedicated to creating a more inclusive and supportive community for all."/>
+        <Banners title='WHO WE ARE' content="Learn more about our organization, our mission, vision, and the passionate team dedicated to creating a more inclusive and supportive community for all."/>
         <HowItStarted/>
-        <HowItGoing/>
         <OurValues/>
+        {/* <HowItGoing/> */}        
         <OurTeam/>
     </div>
   )

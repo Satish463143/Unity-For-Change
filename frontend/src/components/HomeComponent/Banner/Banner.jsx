@@ -21,7 +21,7 @@ const Banner = () => {
                 </p>
                 <div>
                     <Link to='/donate'>
-                    <button className="filled-button">Join Us</button></Link>
+                    <button className="filled-button">Get Involved with Us</button></Link>
                     <Link to='/what_we_do'>
                     <button className="outlined-button">Learn More </button>
                     </Link>

@@ -6,7 +6,7 @@ const WhatWeDo = () => {
   return (
     <div>
         <hr />
-        <Banners content='Discover the impactful work we do to empower and uplift the LBT community through advocacy, support programs, and initiatives that drive change.' title='WHAT WE DO'/>
+        <Banners content='Explore the major areas of work that we do to empower and uplift the LBT community.' title='THEMATIC AREAS'/>
         <FocousArea/>
     </div>
   )

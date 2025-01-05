@@ -35,7 +35,7 @@ const Footer = () => {
                                 />
                             </svg>
                         </span>
-                        <a href="" target='_blank'>unityforchange@gmail.com</a>
+                        <a href="https://mail.google.com/mail/u/0/?ogbl=u4change2019@gmail.com" target='_blank'>u4change2019@gmail.com</a>
                     </li>
                     <li>
                         <span>
@@ -74,7 +74,7 @@ const Footer = () => {
                                 />
                             </svg>
                         </span>
-                        <a href="" target='_blank'>(981)-123-1234</a>
+                        <a href="tel:980233 4130" target='_blank'>(980)-233 4130</a>
                     </li>
                     <li>
                         <span>
@@ -91,28 +91,43 @@ const Footer = () => {
                             <path d="M388.818,146.28a24.3,24.3,0,1,1-24.295-24.295A24.3,24.3,0,0,1,388.818,146.28ZM466,256l-0.005.306-1.38,88.105a121.58,121.58,0,0,1-120.2,120.2L256,466l-0.306-.006-88.105-1.376a121.586,121.586,0,0,1-120.206-120.2L46,256l0.006-.306,1.376-88.108a121.59,121.59,0,0,1,120.206-120.2L256,46l0.306,0.006,88.105,1.376a121.584,121.584,0,0,1,120.2,120.2Zm-39.112,0-1.374-87.8A82.654,82.654,0,0,0,343.8,86.485L256,85.114l-87.8,1.371A82.658,82.658,0,0,0,86.484,168.2L85.113,256l1.371,87.8A82.655,82.655,0,0,0,168.2,425.515l87.8,1.371,87.8-1.371A82.651,82.651,0,0,0,425.514,343.8Zm-63.048,0A107.841,107.841,0,1,1,256,148.159,107.962,107.962,0,0,1,363.84,256Zm-39.107,0A68.734,68.734,0,1,0,256,324.734,68.812,68.812,0,0,0,324.732,256Z" transform="translate(-46 -46.001)"/>
                         </svg>
                         </span>
-                        <a href="" target='_blank'>www.instagram.com</a>
+                        <a href="https://www.instagram.com/unity_4_change?igsh=ZHNkZjB2Nm1xejR1" target='_blank'>Instagram</a>
                     </li>
                     <li>
                         <span>
                             <svg
-                                className="feather feather-linkedin"
-                                fill="none"
-                                height="24"
-                                width="24"
-                                viewBox="0 0 24 24"
+                                height="24px"
+                                widths='24px'
+                                style={{
+                                    fillRule: 'evenodd',
+                                    clipRule: 'evenodd',
+                                    strokeLinejoin: 'round',
+                                    strokeMiterlimit: 2,
+                                }}
+                                version="1.1"
+                                viewBox="0 0 512 512"
+                                width="100%"
+                                xmlSpace="preserve"
                                 xmlns="http://www.w3.org/2000/svg"
-                                stroke="#D62E3F"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
+                                xmlnsSerif="http://www.serif.com/"
+                                xmlnsXlink="http://www.w3.org/1999/xlink"
+                                fill="#D62E3F"
                                 >
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                                <rect height="12" width="4" x="2" y="9" />
-                                <circle cx="4" cy="4" r="2" />
-                            </svg>
+                                <path
+                                    d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z"
+                                    style={{ fillRule: 'nonzero' }}
+                                />
+                                </svg>
                         </span>
-                        <a href="" target='_blank'>www.linkedin.com</a>
+                        <a href="https://youtube.com/@unityforchange3252?feature=shared" target='_blank'>Youtube</a>
+                    </li>
+                    <li>
+                        <span>
+                        <svg viewBox="0 0 448 512" fill="#D62E3F" width='24px' height='24px' xmlns="http://www.w3.org/2000/svg">
+                            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                        </svg>
+                        </span>
+                        <a href="https://m.facebook.com/@lgbtiqgroup/?hr=1" target='_blank'>TikTok</a>
                     </li>
                     <li>
                         <span>
@@ -126,7 +141,7 @@ const Footer = () => {
                                 <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
                             </svg>
                         </span>
-                        <a href="" target='_blank'>www.facebook.com</a>
+                        <a href="https://m.facebook.com/@lgbtiqgroup/?hr=1" target='_blank'>Facebook</a>
                     </li>
                 </div>                
                 <div className="menu_link">
@@ -135,7 +150,7 @@ const Footer = () => {
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/what_we_do'>What We Do</Link>
+                        <Link to='/what_we_do'>Thematic Areas</Link>
                     </li>
                     <li>
                         <Link to='/who_we_are'>Who We Are</Link>
@@ -161,7 +176,7 @@ const Footer = () => {
             </div>
             <hr />
             <div className="copyright_section">
-                <p>© 2024 | Unity for Change - Empowering Voices | Building Equality </p>
+                <p>© 2024 | Unity for Change - Empowering LBT, Powering Pride </p>
                 <p>Design and Developed by <a href="" target='_blank' >Bleeding Tech</a></p>
             </div>           
             

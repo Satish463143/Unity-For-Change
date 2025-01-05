@@ -10,7 +10,7 @@ const TopNav = () => {
           <li><Link to='/gallery'>Gallery</Link></li>
           <li><Link to='/contact_us'>Contact Us</Link></li>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://m.facebook.com/@lgbtiqgroup/?hr=1" target='_blank'>
               <span>
                 <svg
                   className="feather feather-facebook"
@@ -30,7 +30,7 @@ const TopNav = () => {
             </a>
           </li>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://www.instagram.com/unity_4_change?igsh=ZHNkZjB2Nm1xejR1" target='_blank'>
               <span>
                 <svg
                   className="feather feather-instagram"
@@ -52,23 +52,25 @@ const TopNav = () => {
             </a>
           </li>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://mail.google.com/mail/u/0/?ogbl=u4change2019@gmail.com" target='_blank'>
               <span>
                 <svg
-                  className="feather feather-linkedin"
-                  fill="none"
-                  height="34"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
+                  id="Icons"
                   viewBox="0 0 24 24"
-                  width="34"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect height="12" width="4" x="2" y="9" />
-                  <circle cx="4" cy="4" r="2" />
+                  xmlns="http://www.w3.org/2fff/svg"
+                  width='30px'
+                  height='30px'
+                  aria-labelledby="iconEmailTitle"
+                  >
+                  <title id="iconEmailTitle">Email Icon</title>
+                  <path
+                      d="M20,2H4A4,4,0,0,0,0,6V18a4,4,0,0,0,4,4H20a4,4,0,0,0,4-4V6A4,4,0,0,0,20,2Zm2,16a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V6A2,2,0,0,1,4,4H20a2,2,0,0,1,2,2Z"
+                      fill='#000'
+                  />
+                  <path
+                      d="M19.74,7.017a1,1,0,0,0-1.413-.067L13.35,11.479a2.005,2.005,0,0,1-2.7,0L5.673,6.95A1,1,0,1,0,4.327,8.43l3.957,3.6L4.328,15.62A1,1,0,1,0,5.672,17.1l4.143-3.76a3.937,3.937,0,0,0,4.37,0l4.143,3.76a1,1,0,1,0,1.344-1.48l-3.955-3.591,3.956-3.6A1,1,0,0,0,19.74,7.017Z"
+                      fill='#000'
+                  />
                 </svg>
               </span>
             </a>

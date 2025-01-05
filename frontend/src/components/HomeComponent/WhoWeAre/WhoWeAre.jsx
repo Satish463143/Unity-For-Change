@@ -10,17 +10,14 @@ const WhoWeAre = () => {
     <div className='who_we_are'>
         <div className="container">
             <div className="tittle">
-                <h1>WHo we are</h1>
+                <h1>theory of change</h1>
             </div>
-            <div className="wo_we_are_grid">
-                <div className="wo_we_are_grid_box">
-                    <div className="wo_we_are_grid_background">
-                        <div className="wo_we_are_grid_image">
-                            <img src={data.image} alt="" />
-                        </div>
+                        
+                
+                    <div className="wo_we_are_grid_image">
+                        <img src={data.image} alt="" />
                     </div>
-                </div>
-                <div className="who_we_are_content">
+                {/* <div className="who_we_are_content">
                     <p>
                        {data.description}
                     </p>
@@ -29,8 +26,7 @@ const WhoWeAre = () => {
                                 <span>Learn More</span>                            
                         </div>
                     </Link>
-                </div>
-            </div>
+                </div> */}
         </div>
     </div>
   )

@@ -45,7 +45,7 @@ const Sponsor = () => {
         <div className="sponsors">
             <hr />
             <div className="title">
-                <h1>Our Sponsors</h1>
+                <h1>Our Partners</h1>
             </div>
             <div className="container">
                 <div className="sponsor_slider">

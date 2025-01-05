@@ -14,7 +14,7 @@ const ConatctUsMap = () => {
         <h1>CONTACT US VIA</h1>
         <ul>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://m.facebook.com/@lgbtiqgroup/?hr=1" target='_blank'>
               <span>
               <svg
                   className="feather feather-facebook"
@@ -34,7 +34,7 @@ const ConatctUsMap = () => {
             </a>
           </li>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://www.instagram.com/unity_4_change?igsh=ZHNkZjB2Nm1xejR1" target='_blank'>
               <span>
               <svg
                   className="feather feather-instagram"
@@ -56,23 +56,30 @@ const ConatctUsMap = () => {
             </a>
           </li>
           <li>
-            <a href="" target='_blank'>
+            <a href="https://youtube.com/@unityforchange3252?feature=shared" target='_blank'>
               <span>
               <svg
-                  className="feather feather-linkedin"
-                  fill="none"
-                  height="34"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  width="34"
-                  xmlns="http://www.w3.org/2fff/svg"
+                height="30px"
+                widths='30px'
+                style={{
+                    fillRule: 'evenodd',
+                    clipRule: 'evenodd',
+                    strokeLinejoin: 'round',
+                    strokeMiterlimit: 2,
+                }}
+                version="1.1"
+                viewBox="0 0 512 512"
+                width="100%"
+                xmlSpace="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsSerif="http://www.serif.com/"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                
                 >
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect height="12" width="4" x="2" y="9" />
-                  <circle cx="4" cy="4" r="2" />
+                <path
+                    d="M501.303,132.765c-5.887,-22.03 -23.235,-39.377 -45.265,-45.265c-39.932,-10.7 -200.038,-10.7 -200.038,-10.7c0,0 -160.107,0 -200.039,10.7c-22.026,5.888 -39.377,23.235 -45.264,45.265c-10.697,39.928 -10.697,123.238 -10.697,123.238c0,0 0,83.308 10.697,123.232c5.887,22.03 23.238,39.382 45.264,45.269c39.932,10.696 200.039,10.696 200.039,10.696c0,0 160.106,0 200.038,-10.696c22.03,-5.887 39.378,-23.239 45.265,-45.269c10.696,-39.924 10.696,-123.232 10.696,-123.232c0,0 0,-83.31 -10.696,-123.238Zm-296.506,200.039l0,-153.603l133.019,76.802l-133.019,76.801Z"
+                    style={{ fillRule: 'nonzero' }}
+                />
                 </svg>
               </span>
             </a>
@@ -116,7 +123,7 @@ const ConatctUsMap = () => {
             />
           </svg>
         </span>
-        <a href="" target='_blank'>(981)-123-1234</a>
+        <a href="tel:980233 4130" target='_blank'>(980)-233 4130</a>
       </div>
       <div className="number">
         <span>
@@ -139,7 +146,7 @@ const ConatctUsMap = () => {
             />
           </svg>
         </span>
-        <a href="" target='_blank'>unityforchange@gmail.com</a>
+        <a href="https://mail.google.com/mail/u/0/?ogbl=u4change2019@gmail.com" target='_blank'>u4change2019@gmail.com</a>
       </div>
     </div>
   )
