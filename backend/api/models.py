@@ -1,7 +1,7 @@
 from django.db import models
 import os
 import uuid
-from django import forms
+from django_ckeditor_5.fields import CKEditor5Field
 
 def upload_to_unique(instance, filename):
     ext = filename.split('.')[-1]
@@ -50,10 +50,10 @@ class WhoWeAre(models.Model):
 
 class HowItStarted(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
-    description = models.TextField()
+    description = CKEditor5Field(config_name='default')
 
     class Meta:
-        verbose_name_plural = "How It Started"
+        verbose_name_plural = "Our Story"
 
 class HowItsGoing(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
@@ -99,10 +99,10 @@ class WhatWeDo(models.Model):
 class Activity(models.Model):
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
-    description = models.TextField()  # Or RichTextField
+    description=CKEditor5Field(config_name='default')
     thumbnail_image = models.ImageField(upload_to=upload_to_unique)
-    date = models.DateField()
-    location = models.CharField(max_length=255)
+    date = models.DateField(blank=True, null=True)
+    location = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Activities"
