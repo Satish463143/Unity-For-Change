@@ -146,7 +146,7 @@ const ConatctUsMap = () => {
             />
           </svg>
         </span>
-        <a href="https://mail.google.com/mail/u/0/?ogbl=u4change2019@gmail.com" target='_blank'>u4change2019@gmail.com</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=u4change2019@gmail.com" target='_blank'>u4change2019@gmail.com</a>
       </div>
     </div>
   )

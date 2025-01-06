@@ -52,7 +52,7 @@ const TopNav = () => {
             </a>
           </li>
           <li>
-            <a href="https://mail.google.com/mail/u/0/?ogbl=u4change2019@gmail.com" target='_blank'>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=u4change2019@gmail.com" target='_blank'>
               <span>
                 <svg
                   id="Icons"
