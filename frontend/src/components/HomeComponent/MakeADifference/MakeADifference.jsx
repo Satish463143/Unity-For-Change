@@ -1,8 +1,5 @@
 import React from 'react'
 import './MakeADifference.css'
-import diference_1 from '../../../assets/Images/diference_1.png'
-import diference_2 from '../../../assets/Images/diference_2.png'
-import diference_3 from '../../../assets/Images/diference_3.png'
 import { Link } from 'react-router-dom'
 import Button from '../../../common/Button/Button'
 import { getAllActivities } from '../../../api/api'

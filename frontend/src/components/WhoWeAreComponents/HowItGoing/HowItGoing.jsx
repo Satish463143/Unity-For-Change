@@ -1,5 +1,4 @@
 import React from 'react'
-import image2 from '../../../assets/Images/shutterstock_1912887757-scaled-1-1024x683.jpeg'
 import './HowItGoing.css'
 import { gethowItsGoing } from '../../../api/api'
 

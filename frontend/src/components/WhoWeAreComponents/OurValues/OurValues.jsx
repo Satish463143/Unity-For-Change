@@ -1,6 +1,5 @@
 import React from 'react';
 import './OurValues.css';
-import values from '../../../assets/Images/values.png';
 import { getOurValues } from '../../../api/api';
 
 const OurValues = () => {
@@ -16,7 +15,7 @@ const OurValues = () => {
                     {
                         data?.map((item) => (
                             <div className="our_values_box" key={item.id} >
-                                <img src={values} alt="Value icon" />
+                                <img src={item.image} alt="Value icon" />
                                 <h1>{item.heading}</h1>
                                 <p>{item.description}</p>
                             </div>

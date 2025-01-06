@@ -1,6 +1,5 @@
 import React from 'react'
 import './FocousArea.css'
-import image from'../../../assets/Images/0614LGBTQHealth_SC.jpg'
 import { getWhatWeDo } from '../../../api/api'
 
 const FocousArea = () => {
@@ -8,9 +7,7 @@ const FocousArea = () => {
   return (
     <div className='container'>
         <div className="how_it_start_title_content">            
-            <p>
-            Unity for Change focuses on empowering LBT individuals through three key areas: enhancing access to sexual and reproductive health services, fostering mental well-being and community support, and building leadership to drive advocacy and systemic change for an inclusive society.
-            </p>
+
         </div>    
         <div className="focous_area" style={{marginTop:'50px'}}>
         {

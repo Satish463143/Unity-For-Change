@@ -1,6 +1,5 @@
 import React from 'react'
 import './WhatWeOffer.css'
-import whatweoffer from '../../../assets/Images/whatweoffer.png'
 import { getWhatWeOffer } from '../../../api/api'
 import { Link } from 'react-router-dom'
 

@@ -1,7 +1,5 @@
 import React from 'react'
 import './WhoWeAre.css'
-import whoweare from '../../../assets/Images/whoweare.png'
-import {Link, Links} from 'react-router-dom'
 import { getWhoWeAre } from '../../../api/api'
 
 const WhoWeAre = () => {

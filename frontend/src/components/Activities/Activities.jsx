@@ -1,6 +1,5 @@
 import React from 'react'
 import ActivitiesItem from '../../common/ActivitiesItem/ActivitiesItem'
-import image1 from '../../assets/Images/image-lgbtq-plus.jpg'
 import './Activities.css'
 import { getAllActivities } from '../../api/api'
 

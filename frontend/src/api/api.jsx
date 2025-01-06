@@ -53,6 +53,32 @@ export const getGalleryImages = () => {
     return { data, loading, error };
 };
 
+export const getGalleryVideos = () => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            try {
+                const response = await fetch(`${API_BASE_URL}/videos/`);
+                if (!response.ok) {
+                    throw new Error("Failed to fetch");
+                }
+                const result = await response.json();
+                setData(result);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+    return { data, loading, error };
+};
+
 export const getGetInvolved = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);

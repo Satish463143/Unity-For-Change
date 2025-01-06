@@ -1,42 +1,12 @@
 import React,{useState} from 'react'
 import './Video.css'
-import image1 from '../../../assets/Images/image-lgbtq-plus.jpg' 
 import Button from '../../../common/Button/Button'
+import { getGalleryVideos } from '../../../api/api'
 
 const Video = () => {
-    const gallery = [
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-        {
-            image:'',
-        },
-    ]
+    const {data: gallery} = getGalleryVideos();
     const [visibleCount, setVisibleCount] = useState(6);
+    console.log(gallery)
 
     // Sort projects by newest first
     const sortedProjects = gallery
@@ -56,10 +26,12 @@ const Video = () => {
             <div className='videos_grid'>
                 {sortedProjects.slice(0, visibleCount).map((item, index) => {
                     return (
-                    <iframe key={index}
-                        src=''
-                        frameborder="0" allowFullScreen>
-                    </iframe>
+                        <iframe
+                            key={index}
+                            src={`https://www.youtube.com/embed/${new URL(item.youtubeLink).searchParams.get('v')}`}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen>
+                        </iframe>
                     )
                 })
                 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import './OurTeam.css'
 import OurTeamSlider from '../../../common/OurTeamSlider/OurTeamSlider'
-import team from '../../../assets/Images/team.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

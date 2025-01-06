@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SponsorItem from '../../../common/SponsorItem/SponsorItem';
-import compnay from '../../../assets/Images/compnay.png'
 import { getSponsors } from '../../../api/api';
 
 const Sponsor = () => {
@@ -51,7 +50,7 @@ const Sponsor = () => {
                 <div className="sponsor_slider">
                     <Slider {...settings}>
                         {items.map((item, index) => (
-                            <SponsorItem key={index} name={item.name} image={compnay} isActive={index === activeIndex} />
+                            <SponsorItem key={index} name={item.name} image={item.image} isActive={index === activeIndex} />
                         ))}
                     </Slider>
                 </div>

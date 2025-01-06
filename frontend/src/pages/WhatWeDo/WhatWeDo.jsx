@@ -6,7 +6,7 @@ const WhatWeDo = () => {
   return (
     <div>
         <hr />
-        <Banners content='Explore the major areas of work that we do to empower and uplift the LBT community.' title='THEMATIC AREAS'/>
+        <Banners content='Unity for Change focuses on empowering LBT individuals through three key areas: enhancing access to sexual and reproductive health services, fostering mental well-being and community support, and building leadership to drive advocacy and systemic change for an inclusive society.' title='THEMATIC AREAS'/>
         <FocousArea/>
     </div>
   )
