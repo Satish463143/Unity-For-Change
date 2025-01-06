@@ -7,7 +7,7 @@ const GalleryPage = () => {
   return (
     <div>
       <hr />
-        <Banners content='Take a look at the moments that define us-photos and videos capturing our events, initiatives, and the vibrant spirit of our community.' title='GALLERY'/>   
+        <Banners content='Take a look at the moments that define us - Photos and Videos capturing our events, initiatives, and the vibrant spirit of our community.' title='GALLERY'/>   
         <Gallery/>
         <Video/>
     </div>
