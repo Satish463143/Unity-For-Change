@@ -88,10 +88,10 @@ class OurTeam(models.Model):
 class WhatWeDo(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     title = models.CharField(max_length=255)
-    description = models.TextField()
+    description = CKEditor5Field(config_name='default')
 
     class Meta:
-        verbose_name_plural = "What We Do"
+        verbose_name_plural = "Thematic Areas"
 
     def __str__(self):
         return self.title
@@ -144,7 +144,7 @@ class Resource(models.Model):
         return self.name
 
 class Sponsor(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, null=True, blank=True)
     image = models.ImageField(upload_to=upload_to_unique)
 
     def __str__(self):
