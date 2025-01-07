@@ -17,9 +17,8 @@ const OurValues = () => {
                             <div className="our_values_box" key={item.id} >
                                 <img src={item.image} alt="Value icon" />
                                 <h1>{item.heading}</h1>
-                                {/* <p>{item.description}</p>
-                                 */}
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolores cumque doloribus cupiditate ad, aperiam beatae nihil voluptates veniam exercitationem? Optio nam eligendi dolore provident excepturi laboriosam omnis autem eveniet.</p>
+                                <p>{item.description}</p>
+                                
                             </div>
                         ))
                     }
