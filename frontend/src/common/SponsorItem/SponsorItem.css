@@ -5,10 +5,14 @@
     width: 80%;
     margin: auto;
     padding-bottom: 50px;
+    
 }
 .sponsor-item img{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
  .activeTab {

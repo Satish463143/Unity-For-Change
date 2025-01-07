@@ -35,20 +35,20 @@
 }
 .dropdownMenu {
     display: flex;
-    justify-content: center;
+    
     gap: 5px;
     cursor: pointer;
     position: relative;
 }
 .dropdownMenu span{
-    margin-top: 5px;
+    margin-top: 3px;
 }
 .dropdownMenu:hover .submenu{
     display: block;
 }
 .submenu{
     position: absolute;
-    top: 40px;
+    top: 28px;
     left: 0;
     width: 120%;
     display: none;
@@ -59,6 +59,8 @@
     background: var(--white);
     border-bottom: 1px solid grey;
     transition: 0.5s ease;
+    display: block;
+    width: auto;
 }
 .submenu li:hover{
     font-weight: 600 !important;    
@@ -72,5 +74,16 @@
 @media (max-width:900px){
     .navbar, .topnav{
         display: none;
+    }
+    .dropdownMenu span{
+        margin-top: 0px;
+    }
+    .submenu li{
+        margin-top: 0px !important;
+    }
+    .submenu{
+        width: 150px;
+        left: -1px;
+        top: 20px;
     }
 }
