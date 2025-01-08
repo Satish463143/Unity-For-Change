@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import './Video.css'
 import Button from '../../../common/Button/Button'
-import { getGalleryVideos } from '../../../api/api'
+import { getAllVideos, getGalleryVideos } from '../../../api/api'
 
 const Video = () => {
-    const {data: gallery} = getGalleryVideos();
+    const {data: gallery} = getAllVideos()
     const [visibleCount, setVisibleCount] = useState(6);
     console.log(gallery)
 
@@ -16,6 +16,11 @@ const Video = () => {
     const loadMore = () => {
         setVisibleCount(prevCount => prevCount + 6); // Load 9 more each time
     };
+
+    const formatSrc = (videoId) => {
+        const ytUrl = `https://www.youtube.com/embed/${videoId}`;
+        return ytUrl;
+      };
     
   return (
     <div className='container'>
@@ -28,7 +33,7 @@ const Video = () => {
                     return (
                         <iframe
                             key={index}
-                            src={`https://www.youtube.com/embed/${new URL(item.youtubeLink).searchParams.get('v')}`}
+                            src={formatSrc(item.snippet.resourceId.videoId)}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen>
                         </iframe>

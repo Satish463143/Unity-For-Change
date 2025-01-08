@@ -53,6 +53,34 @@ export const getGalleryImages = () => {
     return { data, loading, error };
 };
 
+export const getAllVideos = () => {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            setLoading(true);
+            try {
+                const response = await fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=100&playlistId=UUoh_rKY0yKO3q3JNjfGvCgg&key=AIzaSyCqmP6cSIE0A69uB0y3z3E4AWfW5klvSUQ');
+
+                if (!response.ok) {
+                    throw new Error("Failed to fetch");
+                }
+                const result = await response.json();
+
+                setData(result.items);
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+    return { data, loading, error };
+};
+
 export const getGalleryVideos = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
