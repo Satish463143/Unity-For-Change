@@ -14,6 +14,18 @@ class GalleryAdmin(admin.ModelAdmin):
 
 admin.site.register(api_models.Gallery, GalleryAdmin)
 
+class PartnerAdmin(admin.ModelAdmin):
+    list_display = ('image_preview','name',)
+
+    def image_preview(self, obj):
+        if obj.image:
+            return format_html('<img src="{}" style="width: 100px; height: auto;" />', obj.image.url)
+        return "No Image"
+
+    image_preview.short_description = 'Partner Image'
+
+admin.site.register(api_models.Sponsor, PartnerAdmin)
+
 class ActivityImagesInline(admin.StackedInline):  # Use StackedInline for same-page display
     model = api_models.ActivityImages
     extra = 0  # Number of extra empty forms for images
@@ -41,4 +53,4 @@ admin.site.register(api_models.OurTeam)
 admin.site.register(api_models.WhatWeDo)
 # admin.site.register(api_models.Gallery)
 admin.site.register(api_models.Resource)
-admin.site.register(api_models.Sponsor)
+# admin.site.register(api_models.Sponsor)

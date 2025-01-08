@@ -32,8 +32,8 @@ class GetInvolved(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     title = models.CharField(max_length=255)
     subtitle = models.CharField(max_length=500)
-    date = models.DateField()
-    time = models.TimeField()
+    date = models.DateField(blank=True, null=True)
+    time = models.TimeField(blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Get Involved"
@@ -65,7 +65,7 @@ class HowItsGoing(models.Model):
 class OurValues(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     heading = models.CharField(max_length=255)
-    description = models.TextField()
+    description = models.TextField(blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Our Values"
@@ -148,4 +148,4 @@ class Sponsor(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
 
     def __str__(self):
-        return self.name
+        return self.name or 'Unnamed Sponsor'
