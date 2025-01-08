@@ -61,14 +61,23 @@ export const getAllVideos = () => {
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true);
+
+            // Access the API key from the Vite environment variable
+            const apiKey = import.meta.env.VITE_YT_API_KEY;
+
+            if (!apiKey) {
+                setError("API key is not defined.");
+                setLoading(false);
+                return;
+            }
+
             try {
-                const response = await fetch('https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=100&playlistId=UUoh_rKY0yKO3q3JNjfGvCgg&key=AIzaSyCqmP6cSIE0A69uB0y3z3E4AWfW5klvSUQ');
+                const response = await fetch(`https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=100&playlistId=UUoh_rKY0yKO3q3JNjfGvCgg&key=${apiKey}`);
 
                 if (!response.ok) {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-
                 setData(result.items);
             } catch (err) {
                 setError(err.message);
@@ -76,10 +85,13 @@ export const getAllVideos = () => {
                 setLoading(false);
             }
         };
+
         fetchData();
-    }, []);
+    }, []); // Only run once when the component mounts
+
     return { data, loading, error };
 };
+
 
 export const getGalleryVideos = () => {
     const [data, setData] = useState([]);
