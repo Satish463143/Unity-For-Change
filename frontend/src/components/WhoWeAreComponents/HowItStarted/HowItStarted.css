@@ -22,28 +22,23 @@
     border-image-slice: 1;
 }
 .how_it_start_box{
-    width: 90%;
-    height: 300px;
-    position: relative;
-    background: var(--blue);
-    transform: rotate(5deg); 
+    width: 90%;   
+    /* transform: rotate(5deg);  */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .how_it_start_image {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: var(--blue);
     width: 100%;
-    height: 100%;
-    transform: rotate(-5deg); 
+    height: 300px;
+    transform: rotate(5deg); 
 }
 .how_it_start_image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform: rotate(-5deg); 
+    transform: rotate(-10deg); 
 }
 .how_it_start_content{
     display: flex;
@@ -52,30 +47,45 @@
 .how_it_start_content p{
     font-size: 20px;
 }
-@media(max-width:900px){
+@media(max-width:1200px){
+    .how_it_start_grid{
+        grid-template-columns: 49% 49%;
+    }
+    .how_it_start_box{
+        width: 95%;
+    }
+    .how_it_start_content p{
+        font-size: 17px;
+    }
+}
+@media(max-width:1000px){
     .how_it_start_title h1{
         font-size: 50px;
     }
     .how_it_start_grid{
-        grid-template-columns: 47% 49%;
-        padding: 40px 20px 40px 40px;
+        grid-template-columns: 95%;
+        justify-content: center;
     }
-    .how_it_start_box{
-        width: 100%;
+    .how_it_start_content{
+        margin-top: 50px;     
     }
+    .how_it_start_image img{
+        transform: rotate(-6deg); 
+    }
+    .how_it_start_image {
+        height: 400px;
+        transform: rotate(3deg); 
+    }
+    
+    
+    
 }
 @media(max-width:700px){
     .how_it_start_title h1, .how_it_going_title h1{
         font-size: 35px;
     }
-    .how_it_start_grid{
-        grid-template-columns: 95%;
-        justify-content: center;
-        /* padding: 50px; */
-    }
-    .how_it_start_content{
-        margin-top: 50px;     
-    }
+    
+    
     .how_it_start_content p{
         font-size: 17px;
     }
@@ -83,5 +93,12 @@
 @media(max-width:550px){
     .how_it_start_content p{
         font-size: 15px;
+    }
+    .how_it_start_image {
+        height: 300px;
+        transform: rotate(3deg); 
+    }
+    .how_it_start_grid{
+        padding: 50px 20px 20px 20px;
     }
 }

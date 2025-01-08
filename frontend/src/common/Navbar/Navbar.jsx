@@ -53,7 +53,7 @@ const Navbar = () => {
             <nav>
               <ul>
                 <li className='dropdownMenu'>
-                  <p className={`${menu === "Who We Are" ? "liActive" : ""}`}>Who We Are</p>
+                  <Link to='/who_we_are'><p className={`${menu === "Who We Are" ? "liActive" : ""}`}>Who We Are </p></Link>
                   <span>
                     <svg
                       height="24px"

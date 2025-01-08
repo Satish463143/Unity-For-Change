@@ -33,34 +33,39 @@
     text-align: center;
     font-size: 22px;
     color: var(--blue);
+    line-height: 1;
 }
 .focous_area_box p{
     text-align: justify;
 
 }
-@media(max-width:1000px){
+@media(max-width:1200px){
     .focous_area{
         grid-template-columns: 32% 32% 32%;
+    }
+    .focous_area_box p{
+        line-height: 1.3;
     }
 }
 @media(max-width:800px){
     .focous_area_box h1{
-        font-size: 23px;
+        font-size: 22px;
     }
     .focous_area{
         grid-template-columns: 49% 49%;
     }
 
+   
 }
 @media(max-width:600px){
     .focous_area_box h1{
-        font-size: 20px;
+        font-size: 18px;
     }
     .focous_area_box p{
         font-size: 15px;
     }
 }
-@media(max-width:500px){
+@media(max-width:570px){
     .focous_area{
         grid-template-columns: 100%;
     }

@@ -157,11 +157,6 @@ const MobileNav = () => {
                         Home
                     </Link>
                     </li>
-                    <li onClick={()=>  {toggleMenu(); setMenu('Who We Are')}} className={menu === "Who We Are" ? "liActive" : ""}>
-                    <Link to='/who_we_are'>
-                        Who We Are
-                    </Link>
-                    </li>
                     <li className='dropdownMenu'>
                         <p className={`${menu === "Who We Are" ? "liActive" : ""}`}>Who We Are</p>
                         <span>
@@ -182,9 +177,9 @@ const MobileNav = () => {
                             </svg>
                         </span>
                         <div className="submenu">
-                            <Link to='/who_we_are/#howItStart'><li onClick={() => setMenu("Who We Are")}>Our Story</li></Link>
-                            <Link to='/who_we_are/#ourValues'><li onClick={() => setMenu("Who We Are")}>Our Values</li></Link>
-                            <Link to='/who_we_are/#ourTeam'><li onClick={() => setMenu("Who We Are")}>Our Team</li></Link>
+                            <Link to='/who_we_are/#howItStart'><li onClick={() => {toggleMenu(); setMenu("Who We Are")}}>Our Story</li></Link>
+                            <Link to='/who_we_are/#ourValues'><li onClick={() => {toggleMenu(); setMenu("Who We Are")}}>Our Values</li></Link>
+                            <Link to='/who_we_are/#ourTeam'><li onClick={() => {toggleMenu(); setMenu("Who We Are")}}>Our Team</li></Link>
                         </div>
                     </li>
                     <li onClick={()=> {toggleMenu(); setMenu('What We Do')}} className={menu === "What We Do" ? "liActive" : ""}>

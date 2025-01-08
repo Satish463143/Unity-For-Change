@@ -18,6 +18,7 @@ const OurValues = () => {
                                 <img src={item.image} alt="Value icon" />
                                 <h1>{item.heading}</h1>
                                 <p>{item.description}</p>
+                                
                             </div>
                         ))
                     }

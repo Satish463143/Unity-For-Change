@@ -23,10 +23,12 @@
 .get_involved_content h1{
     padding: 10px 0 20px 0 ;
     font-size: 40px;
+    line-height: 1;
 }
 .get_involved_content p{
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.2;
 }
 .get_involved_image{
     width: 100%;

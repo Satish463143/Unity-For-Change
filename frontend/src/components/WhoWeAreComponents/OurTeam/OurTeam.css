@@ -4,6 +4,7 @@
     text-align: center;
     margin-top: -40px;
     font-size: 20px;
+    
 }
 .our_team{
     margin-top: 50px;
@@ -29,7 +30,7 @@
 }
 .team_slider p{
     font-size: 20px;
-    
+    text-align: center;    
 }
 @media(max-width:800px){
     .team_slider img{
