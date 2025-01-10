@@ -1,13 +1,15 @@
 import React from 'react'
 
-const GetInvoledItem = ({image,title, subtitle, date, location}) => {
+const GetInvoledItem = ({image,title, subtitle, date, location, time}) => {
   return (
     <div className='get_involved_item'>
-        <img src={image} alt="" />        
+        <img src={image} alt="" />  
         <h1>{title}</h1> 
-        <p style={{color:'var(--orange)'}}>{subtitle}</p>
-        <h3>{date} <br /> {time}</h3>
-        <h3>{location}</h3>   
+        <div className="get_involved_item_content"> 
+            <p>{subtitle}</p>
+            <h4 style={{display:'flex', justifyContent:'space-between'}}> <span>{date}</span>  <span>{time}</span> </h4>
+            <h4>{location}</h4>  
+        </div> 
     </div>
   )
 }

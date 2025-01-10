@@ -21,22 +21,13 @@ const GetInvolved = () => {
                 date={item?.date}
                 location={item?.location}
                 image={item?.image}
+                time={item.time}
                 />
             ))
             )}        
            
-        </div>
-        
+        </div>        
     </div>
-//     <div className="get_involved_content">
-//     <p style={{color:'var(--orange)'}}>{data?.subtitle}</p>
-//     <h1>{data?.title}</h1>
-//     <h3>{data?.date} <br /> {data?.time}</h3>
-//     <h3>{data?.location}</h3>
-// </div>
-// <div className="get_involved_image">
-//     <img src={data.image} alt="" />
-// </div>
   )
 }
 

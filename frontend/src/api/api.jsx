@@ -133,7 +133,7 @@ export const getGetInvolved = () => {
                     throw new Error("Failed to fetch");
                 }
                 const result = await response.json();
-                setData(result[0]);
+                setData(result);
             } catch (err) {
                 setError(err.message);
             } finally {
