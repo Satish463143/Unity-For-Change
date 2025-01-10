@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProjectsDetails.css'
+import image from '../../assets/Images/one.jpg'
 
 const ProjectDetailsItem = ({description, images}) => {
   return (

@@ -26,7 +26,7 @@ const Video = () => {
     <div className='container'>
         <div className="how_it_going_title">
                 <h1>Our Videos</h1>
-                <p>Experience stories of resilience, advocacy, and celebration through our inspiring video collection. Each clip captures powerful moments from our journey toward equality and acceptance within the LGBTQ+ community.</p>
+                <p>Experience stories of resilience, advocacy, and celebration through our inspiring video collection. Each clip captures powerful moments from our journey toward equality and acceptance within the LGBTQIA+ community.</p>
             </div>
             <div className='videos_grid'>
                 {sortedProjects.slice(0, visibleCount).map((item, index) => {

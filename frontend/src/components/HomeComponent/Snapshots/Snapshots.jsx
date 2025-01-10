@@ -49,6 +49,13 @@ const Snapshots = () => {
                   ))}
               </Slider>
           </div>
+          <div className='what_we_offer_button'>
+            <Link to='/gallery'>
+                <div className="gradient-button">                            
+                        <span>View all</span>                            
+                </div>
+            </Link>
+            </div>
         </div>
         
 

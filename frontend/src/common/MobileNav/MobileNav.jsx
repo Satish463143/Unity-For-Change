@@ -66,7 +66,7 @@ const MobileNav = () => {
                     <h1>Unity For Change</h1>
                 </div>
                 <div className="contact_logo">
-                    <span>
+                    <a href="tel:980233 4130" target='_blank'><span>
                         <svg
                             fill="none"
                             height="24"
@@ -145,7 +145,8 @@ const MobileNav = () => {
                                 strokeWidth="2"
                             />
                             </svg>
-                    </span>
+                    </span></a>
+                    
                 </div>
             </div>
 
@@ -189,7 +190,7 @@ const MobileNav = () => {
                     </li>
                     <li onClick={()=> {toggleMenu(); setMenu('Activites')}} className={menu === "Activites" ? "liActive" : ""}>
                     <Link to='/activites'>
-                        Our Projects
+                        Activities
                     </Link>
                     </li>
                     <li onClick={()=> {toggleMenu(); setMenu('Resources')}} className={menu === "Resources" ? "liActive" : ""}>

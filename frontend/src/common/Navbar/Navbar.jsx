@@ -84,7 +84,7 @@ const Navbar = () => {
                 </li>
                 <li onClick={()=> setMenu('Activites')} className={menu === "Activites" ? "liActive" : ""}>
                   <Link to='/activites'>
-                    Our Projects
+                    Activities
                   </Link>
                 </li>
                 <li onClick={()=> setMenu('Resources')} className={menu === "Resources" ? "liActive" : ""}>

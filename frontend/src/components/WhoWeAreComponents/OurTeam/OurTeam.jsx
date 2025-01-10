@@ -25,7 +25,7 @@ const OurTeam = () => {
         <div className='container'>
             <div className="how_it_going_title">
                 <h1>Our team</h1>
-                <p>A passionate group dedicated to advocating for LGBTQ+ equality, empowerment, and community support.</p>
+                <p>A passionate group dedicated to advocating for LBT rights, empowerment and to building a community movement together for an inclusive world.</p>
             </div>
             <div className="our_team_slider">
                 <Slider {...settings}>

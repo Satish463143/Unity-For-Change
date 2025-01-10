@@ -7,8 +7,8 @@
 }
 .get_involved{
     display: grid;
-    grid-template-columns: 30% 70%;
-    justify-content: center;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
     width: 100%;
 }
 .get_involved_content{

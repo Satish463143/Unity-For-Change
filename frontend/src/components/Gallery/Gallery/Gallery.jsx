@@ -19,7 +19,7 @@ const Gallery = () => {
     <div className='container'>
         <div className="how_it_going_title">
                 <h1>Our Images</h1>
-                <p>Explore moments of unity, celebration, and advocacy through our vibrant gallery. Each image reflects our journey toward equality and acceptance within the LGBTQ+ community.</p>
+                <p>Explore moments of unity, celebration, and advocacy through our vibrant gallery. Each image reflects our journey toward equality and acceptance within the LGBTQIA+ community.</p>
             </div>
         <div className="gallery_grid">
             {sortedProjects.slice(0, visibleCount).map((item, index) => (
