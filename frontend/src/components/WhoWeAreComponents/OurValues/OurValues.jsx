@@ -6,9 +6,9 @@ const OurValues = () => {
     const { data } = getOurValues();
 
     return (
-        <div className='container' id='ourValues'>
+        <div className='container' id='ourValues' style={{marginTop:'6.5%'}}>
             <div className="our_values">
-                <div className="how_it_start_title">
+                <div className="how_it_start_title" style={{marginBlock:'5%'}}>
                     <h1>our values</h1>
                 </div>
                 <div className="our_values_grid" >
