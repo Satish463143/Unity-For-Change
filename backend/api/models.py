@@ -31,9 +31,10 @@ class WhatWeOffer(models.Model):
 class GetInvolved(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
     title = models.CharField(max_length=255)
-    subtitle = models.CharField(max_length=500)
+    description = CKEditor5Field(config_name='default')
     date = models.DateField(blank=True, null=True)
     time = models.TimeField(blank=True, null=True)
+    location = models.CharField(max_length=100,blank=True, null=True)
 
     class Meta:
         verbose_name_plural = "Get Involved"
@@ -49,11 +50,15 @@ class WhoWeAre(models.Model):
         verbose_name_plural = "Who We Are"
 
 class HowItStarted(models.Model):
-    image = models.ImageField(upload_to=upload_to_unique)
-    description = CKEditor5Field(config_name='default')
+    first_image = models.ImageField(upload_to=upload_to_unique)
+    first_description = CKEditor5Field(config_name='default')
+    second_image = models.ImageField(upload_to=upload_to_unique)
+    second_description = CKEditor5Field(config_name='default')
+    third_image = models.ImageField(upload_to=upload_to_unique)
+    third_description = CKEditor5Field(config_name='default')
 
     class Meta:
-        verbose_name_plural = "Our Story"
+        verbose_name_plural = "Our story"
 
 class HowItsGoing(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)
@@ -110,6 +115,7 @@ class Activity(models.Model):
     def __str__(self):
         return self.title
 
+
 class ActivityImages(models.Model):
     activity = models.ForeignKey(Activity, related_name='images', on_delete=models.CASCADE)
     image = models.ImageField(upload_to=upload_to_unique)
@@ -122,6 +128,12 @@ class Gallery(models.Model):
 
     class Meta:
         verbose_name_plural = "Gallery Images"
+
+class Video(models.Model):
+    youtubeLink = models.CharField(max_length=500)
+
+    class Meta:
+        verbose_name_plural = "Youtube Videos"
 
 class ContactUs(models.Model):
     full_name = models.CharField(max_length=255)
@@ -146,6 +158,7 @@ class Resource(models.Model):
 class Sponsor(models.Model):
     name = models.CharField(max_length=255, null=True, blank=True)
     image = models.ImageField(upload_to=upload_to_unique)
-
-    def __str__(self):
-        return self.name or 'Unnamed Sponsor'
+    
+    class Meta:
+        verbose_name_plural = "Partners"
+    

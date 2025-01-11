@@ -2,6 +2,7 @@ import React from 'react'
 import './GetInvolved.css'
 import { getGetInvolved } from '../../../api/api'
 import GetInvoledItem from './GetInvoledItem';
+import parse from 'html-react-parser'
 
 const GetInvolved = () => {
     const {data, error, loading} = getGetInvolved();
@@ -17,7 +18,7 @@ const GetInvolved = () => {
                 <GetInvoledItem
                 key={index}
                 title={item?.title}
-                subtitle={item?.subtitle}
+                subtitle={parse(item?.description)}
                 date={item?.date}
                 location={item?.location}
                 image={item?.image}
