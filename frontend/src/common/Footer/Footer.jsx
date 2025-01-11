@@ -167,7 +167,7 @@ const Footer = () => {
                         <Link to='/gallery'>Gallery</Link>
                     </li>
                     <li>
-                        <Link to='/contact_us'>Conatct Us</Link>
+                        <Link to='/contact_us'>Contact Us</Link>
                     </li>
                     <li>
                         <Link to='/donate'>Make a Donation</Link>
