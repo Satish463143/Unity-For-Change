@@ -12,7 +12,7 @@ const ProjectsDetails = () => {
     <div>
             <div>
                 <ProjectsDetailsBanner title={activity.title} shortContent={activity.subtitle}/>
-                <ProjectDetailsItem description={parse(activity.description)} images={activity.images} />
+                <ProjectDetailsItem description={parse(activity.description)} images={activity.images} videos={activity.videos}/>
             </div>
             
     </div>
