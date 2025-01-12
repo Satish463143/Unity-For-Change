@@ -2,6 +2,7 @@ from django.db import models
 import os
 import uuid
 from django_ckeditor_5.fields import CKEditor5Field
+from cloudinary.models import CloudinaryField
 
 def upload_to_unique(instance, filename):
     ext = filename.split('.')[-1]
@@ -122,6 +123,14 @@ class ActivityImages(models.Model):
 
     def __str__(self):
         return f"Image for {self.activity.title}"
+
+class ActivityVideo(models.Model):
+    activity = models.ForeignKey(Activity, related_name='videos', on_delete=models.CASCADE)
+    video = CloudinaryField('video', resource_type='video', folder="UFC", blank=True, null=True)
+
+    def __str__(self):
+        return f"Video for {self.activity.title}"
+
 
 class Gallery(models.Model):
     image = models.ImageField(upload_to=upload_to_unique)

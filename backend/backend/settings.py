@@ -53,8 +53,20 @@ INSTALLED_APPS = [
     'django_ckeditor_5',
 
     #auto file delete
-    'django_cleanup.apps.CleanupConfig'
+    'django_cleanup.apps.CleanupConfig',
+
+    #cloudinary storage
+    'cloudinary',  # Cloudinary package
+    'cloudinary_storage'
 ]
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'deoefj9hc',
+    'API_KEY': '483918366433987',
+    'API_SECRET': 'UUJDDgPBGNA2ki8gq9tIrW0Er_0',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CKEDITOR_5_CONFIGS = {
     'default': {

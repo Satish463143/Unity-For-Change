@@ -31,10 +31,15 @@ class ActivityImagesInline(admin.StackedInline):  # Use StackedInline for same-p
     extra = 0  # Number of extra empty forms for images
     fields = ('image', )  # Show only the image field for simplicity
 
+class ActivityVideosInline(admin.StackedInline):  # Use StackedInline for better display
+    model = api_models.ActivityVideo
+    extra = 0  # No extra blank forms by default
+    fields = ('video', )  # Show only the video field for simplicity
+
 @admin.register(api_models.Activity)
 class ActivityAdmin(admin.ModelAdmin):
     list_display = ('title', 'date', 'location')
-    inlines = [ActivityImagesInline]  # Add the inline form
+    inlines = [ActivityImagesInline, ActivityVideosInline]  # Add the inline form
 
 # Custom admin for ContactUs to display all fields
 @admin.register(api_models.ContactUs)

@@ -15,6 +15,7 @@ from .models import (
     ContactUs,
     Resource,
     Sponsor,
+    ActivityVideo
 )
 
 class HomeBannerSerializer(serializers.ModelSerializer):
@@ -69,14 +70,20 @@ class ActivityImagesSerializer(serializers.ModelSerializer):
         model = ActivityImages
         fields = ('id', 'image_url')  # Include any other fields if needed
 
+class ActivityVideoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ActivityVideo
+        fields = ['id', 'video']
+
 
 class ActivitySerializer(serializers.ModelSerializer):
     images = ActivityImagesSerializer(many=True, read_only=True)
+    videos = ActivityVideoSerializer(many=True, read_only=True)
 
     class Meta:
         model = Activity
         fields = ('id', 'title', 'subtitle', 'description', 'thumbnail_image', 
-                  'date', 'location', 'images')
+                  'date', 'location', 'images','videos')
 
 class GallerySerializer(serializers.ModelSerializer):
     class Meta:
