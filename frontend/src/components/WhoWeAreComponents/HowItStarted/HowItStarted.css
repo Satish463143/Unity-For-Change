@@ -26,6 +26,9 @@
     border-image-slice: 1;
     border-radius: 10px; /* Rounded corners for the grid */
 }
+.how_it_start_mobile{
+    display: none;
+}
 
 /* Box containing the image */
 .how_it_start_box {
@@ -91,6 +94,12 @@
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
         justify-content: center;
         padding: 20px;
+    }
+    .how_it_start_mobile{
+        display: block;
+    }
+    .how_it_start_desktop{
+        display: none;
     }
     .how_it_start_image {
         height: 250px; /* Slightly smaller images on smaller screens */
