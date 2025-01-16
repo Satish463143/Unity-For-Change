@@ -52,7 +52,7 @@ const HowItStarted = () => {
                 </div>
                 <div className="how_it_start_mobile how_it_start_grid">
                     <div className="how_it_start_box">
-                        <div className="how_it_start_image">
+                        <div className="how_it_start_image image1">
                             <img src={data.first_image} alt="Story" />
                         </div>
                     </div>
