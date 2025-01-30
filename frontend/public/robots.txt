@@ -1,3 +1,14 @@
+# robots.txt for https://unity4change.org.np/
+
 User-agent: *
-Disallow: /admin/
-Allow: /
+
+# Allow specific pages
+Allow: /contact_us
+Allow: /what_we_do
+Allow: /who_we_are
+Allow: /activites
+Allow: /gallery
+Allow: /donate
+Allow: /resources
+
+Sitemap: https://unity4change.org.np/sitemap.xml
