@@ -12,9 +12,9 @@ const Video = () => {
     const sortedProjects = gallery
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
-    // Function to load more images
+    // Function to load more videos
     const loadMore = () => {
-        setVisibleCount(prevCount => prevCount + 6); // Load 9 more each time
+        setVisibleCount(prevCount => prevCount + 6); // Load 6 more each time
     };
 
     const formatSrc = (videoId) => {
