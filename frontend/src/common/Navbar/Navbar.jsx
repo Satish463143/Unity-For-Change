@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="nav_menu">
           <div className="logo">
             <Link to='/'>
-              <img src={logo} alt="" />
+              <img src={logo} alt="Logo of Unity for change" />
             </Link>
           </div>
           <div className="menu">
