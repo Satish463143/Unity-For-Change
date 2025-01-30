@@ -7,7 +7,7 @@ const ActivitiesItem = ({activity}) => {
         <Link to={`/project_details/${activity.id}`} 
         state={{activity}}
         >
-            <img src={activity.thumbnail_image} alt="" /> 
+            <img src={activity.thumbnail_image} alt="Various activities by Unity for Change, including LGBTQIA+ advocacy, community workshops, awareness campaigns, and empowerment programs for trans individuals." /> 
             <div className="activities_date">
                 <p style={{display:'flex', alignItems:'center', gap:'8px'}}>
                     <span>

@@ -9,8 +9,8 @@ const Banner = () => {
   return (
     <div className='banner'>
         <div className="banner_img">
-            <img className='desktop_iamge' src={homeBanner.image} alt="" />
-            <img className='mobile_image' src={homeBanner.mobileImage} alt="" />
+            <img className='desktop_iamge' src={homeBanner.image} alt={homeBanner.title} />
+            <img className='mobile_image' src={homeBanner.mobileImage} alt={homeBanner.title} />
         </div>
         <div className='banner_overlay'></div>
         <div className="container">

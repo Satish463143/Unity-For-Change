@@ -18,7 +18,7 @@ const MakeADifference = () => {
             {
                 <div className="make_a_difference_box">
                     <div className="make_a_difference_box_image">
-                        <img src={data[0]?.thumbnail_image} alt="" />
+                        <img src={data[0]?.thumbnail_image} alt={data[0]?.description} />
                     </div>
                     <div className="make_a_difference_box_content">
                         <p style={{display:'flex', alignItems:'center', margin:'20px 0 10px 0', gap:'20px'}}>
@@ -87,7 +87,7 @@ const MakeADifference = () => {
                     data?.slice(1,3).map((data)=>(
                         <div className="make_a_difference_box_grid" key={data.id} >
                             <div className=" make_a_difference_box_image_second">
-                                <img src={data.thumbnail_image} alt="" />
+                                <img src={data.thumbnail_image} alt={data.description} />
                             </div>
                             <div className="make_a_difference_box_content">
                                 <p style={{display:'flex', alignItems:'center', margin:'20px 0 10px 0', gap:'20px'}}>

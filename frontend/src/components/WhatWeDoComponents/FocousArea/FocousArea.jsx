@@ -13,7 +13,7 @@ const FocousArea = () => {
         {
             data?.map((item)=>(
                 <div className="focous_area_box" style={{border:'2px solid var(--blue)'}} key={item.id}>
-                <img src={item.image} alt="" />
+                <img src={item.image} alt={item.title} />
                 <h1>{item.title}</h1>
                 <p>{item.description}</p>
             </div>

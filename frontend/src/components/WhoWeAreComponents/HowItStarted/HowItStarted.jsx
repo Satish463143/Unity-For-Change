@@ -27,7 +27,7 @@ const HowItStarted = () => {
                 <div className="how_it_start_desktop how_it_start_grid">
                     <div className="how_it_start_box">
                         <div className="how_it_start_image">
-                            <img src={data.first_image} alt="Story" />
+                            <img src={data.first_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_content">
@@ -38,12 +38,12 @@ const HowItStarted = () => {
                     </div>
                     <div className="how_it_start_box">
                         <div className="how_it_start_image">
-                            <img src={data.second_image} alt="Story" />
+                            <img src={data.second_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_box">
                         <div className="how_it_start_image">
-                            <img src={data.third_image} alt="Story" />
+                            <img src={data.third_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_content">
@@ -53,7 +53,7 @@ const HowItStarted = () => {
                 <div className="how_it_start_mobile how_it_start_grid">
                     <div className="how_it_start_box">
                         <div className="how_it_start_image image1">
-                            <img src={data.first_image} alt="Story" />
+                            <img src={data.first_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_content">
@@ -61,7 +61,7 @@ const HowItStarted = () => {
                     </div>
                     <div className="how_it_start_box">
                         <div className="how_it_start_image">
-                            <img src={data.second_image} alt="Story" />
+                            <img src={data.second_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_content">
@@ -70,7 +70,7 @@ const HowItStarted = () => {
                     
                     <div className="how_it_start_box">
                         <div className="how_it_start_image">
-                            <img src={data.third_image} alt="Story" />
+                            <img src={data.third_image} alt="The journey of Unity for Change—founded by dedicated trans youth, advocating for trans rights, inclusion, and community empowerment since 2019." />
                         </div>
                     </div>
                     <div className="how_it_start_content">

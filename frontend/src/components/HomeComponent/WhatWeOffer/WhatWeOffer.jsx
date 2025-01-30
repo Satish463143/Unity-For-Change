@@ -20,7 +20,7 @@ const WhatWeOffer = () => {
                 data.map((data) => (
                     <div className="what_we_offer_box" key={data.id} style={{borderColor:'var(--pruple)'}}>
                         <div className="what_we_offer_box_image">
-                            <img src={data.image} alt="" />
+                            <img src={data.image} alt="Logo of Unity for Change, a registered trans-men-led organization in Nepal, founded on February 14, 2020, dedicated to the welfare of trans people with no political affiliation." />
                         </div>
                         <div className="what_we_offer_box_content">
                             <h1 style={{color:'var(--pruple) !important'}}>{data.heading}</h1>
