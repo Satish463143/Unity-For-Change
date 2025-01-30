@@ -14,6 +14,7 @@ const Footer = () => {
                 </div>
                 <div className="social_links">
                     <h3>Social Links</h3>
+                    <ul>
                     <li>
                         <span>
                             <svg
@@ -143,9 +144,11 @@ const Footer = () => {
                         </span>
                         <a href="https://m.facebook.com/@lgbtiqgroup/?hr=1" target='_blank'>Facebook</a>
                     </li>
+                    </ul>
                 </div>                
                 <div className="menu_link">
                     <h3>Quick Links</h3>
+                    <ul>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
@@ -158,8 +161,10 @@ const Footer = () => {
                     <li>
                         <Link to='/activites'>Our Projects</Link>
                     </li>
+                    </ul>
                 </div>
                 <div className="menu_link menu_link_2">
+                <ul>
                     <li>
                         <Link to='/resources'>Resouces</Link>
                     </li>
@@ -172,6 +177,7 @@ const Footer = () => {
                     <li>
                         <Link to='/donate'>Make a Donation</Link>
                     </li>
+                    </ul>
                 </div>
             </div>
             <hr />

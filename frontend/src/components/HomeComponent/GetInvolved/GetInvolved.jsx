@@ -6,7 +6,6 @@ import parse from 'html-react-parser'
 
 const GetInvolved = () => {
     const {data, error, loading} = getGetInvolved();
-    console.log('data', data);
   return (
     <div className='container'>
         <div className="get_involved_title">
