@@ -75,7 +75,7 @@ const Footer = () => {
                                 />
                             </svg>
                         </span>
-                        <a href="tel:980233 4130" target='_blank'>(980)-233 4130</a>
+                        <a href="tel:980233 4130" target='_blank'>(+977) 9802334130</a>
                     </li>
                     <li>
                         <span>
