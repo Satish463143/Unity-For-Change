@@ -15,7 +15,7 @@ const OurValues = () => {
                     {
                         data?.map((item) => (
                             <div className="our_values_box" key={item.id} >
-                                <img src={item.image} alt="Value icon" />
+                                <img src={item.image} alt={item.heading} />
                                 <h1>{item.heading}</h1>
                                 <p>{item.description}</p>
                                 

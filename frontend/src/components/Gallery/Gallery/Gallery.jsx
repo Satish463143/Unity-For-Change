@@ -23,7 +23,7 @@ const Gallery = () => {
             </div>
         <div className="gallery_grid">
             {sortedProjects.slice(0, visibleCount).map((item, index) => (
-               <Link to={item.image}><img key={index} src={item.image} alt={`Gallery ${index}`} /></Link>
+               <Link to={item.image}><img key={index} src={item.image} alt="LGBTQ+ individuals engaged in a support group discussion, fostering connection and understanding." /></Link>
             ))}
         </div> 
         {visibleCount < sortedProjects.length && (

@@ -16,14 +16,14 @@ const Snapshots = () => {
         prevArrow: <PrevArrow />,
         responsive: [
           {
-              breakpoint: 1000, // Max width 600px
+              breakpoint: 1000, // Max width 100px
               settings: {
                   slidesToShow: 3, // Show only 1 slide at a time
                   slidesToScroll: 1, // Scroll one slide at a time
               },
           },
           {
-              breakpoint: 700, // Max width 600px
+              breakpoint: 700, // Max width 700px
               settings: {
                   slidesToShow: 2, // Show only 1 slide at a time
                   slidesToScroll: 1, // Scroll one slide at a time
@@ -45,14 +45,14 @@ const Snapshots = () => {
           <div className=" gallery_slider">
               <Slider {...settings}>
                   {items.map((item, index) => (
-                      <a href={item.image} target='_blank'><img key={index} src={item.image} alt="" /></a>
+                      <a href={item.image} target='_blank'><img key={index} src={item.image} alt="A diverse group of LGBTQ+ individuals sharing smiles and support at a community event." /></a>
                   ))}
               </Slider>
           </div>
           <div className='what_we_offer_button'>
             <Link to='/gallery'>
                 <div className="gradient-button">                            
-                        <span>View all</span>                            
+                    <span>View all</span>                            
                 </div>
             </Link>
             </div>

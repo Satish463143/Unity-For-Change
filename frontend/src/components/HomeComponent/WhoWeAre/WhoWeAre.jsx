@@ -13,7 +13,7 @@ const WhoWeAre = () => {
                         
                 
                     <div className="wo_we_are_grid_image">
-                        <img src={data.image} alt="" />
+                        <img src={data.image} alt={data.description} />
                     </div>
                 {/* <div className="who_we_are_content">
                     <p>
