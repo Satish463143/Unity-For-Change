@@ -7,6 +7,8 @@ const ProjectDetailsPage = () => {
   return (
     <div>
       <Helmet>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8938859185300079"
+    crossorigin="anonymous"></script>
         <title>Unity For Change</title>
         <meta
           name="description"

@@ -6,6 +6,8 @@ const DonatePage = () => {
   return (
     <div>
       <Helmet>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8938859185300079"
+    crossorigin="anonymous"></script>
         <title>Donate</title>
         <meta
           name="description"
