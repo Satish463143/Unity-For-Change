@@ -17,7 +17,6 @@ const Home = () => {
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8938859185300079"
     crossorigin="anonymous"></script>
         <title>Unity for Change</title>
-<<<<<<< HEAD
         <meta
           name="description"
           content="Welcome to Unity for Change! We are a Nepal-based non-profit organization dedicated to empowering communities through education, healthcare, environmental conservation, and social initiatives. Our mission is to bring meaningful change by supporting underprivileged communities and promoting sustainable solutions. Join us in making a difference through volunteering, donations, and advocacy. Explore our programs, success stories, and upcoming events to see how we are transforming lives. Be a part of the change today!"
@@ -32,29 +31,6 @@ const Home = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-=======
-        <meta name="description" content="
-        Welcome to Unity for Change! We are a Nepal-based non-profit organization dedicated
-         to empowering communities through education, healthcare, environmental conservation,
-          and social initiatives. Our mission is to bring meaningful change by supporting 
-          underprivileged communities and promoting sustainable solutions. Join us in making a 
-          difference through volunteering, donations, and advocacy. Explore our programs, success 
-          stories, and upcoming events to see how we are transforming lives. Be a part of the change today!
-        " />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
-      </Helmet>
-      <Banner/>
-      <WhatWeOffer/>        
-      <WhoWeAre/>
-      <MakeADifference/>
-      <Snapshots/>           
-      <Sponsor/>
-      <GetInvolved/> 
-      <DownBanner/>  
-    </div>
-  )
-}
->>>>>>> b2190d9a2f10f40ad1252e8f7c5452bbf6e8d8f3
 
             gtag('config', 'G-91Y5X6D7SM');
           `}
